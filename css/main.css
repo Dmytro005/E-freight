@@ -19,16 +19,22 @@ h2, h3, ul li, h4 {
   font-size: 30px;
   text-transform: uppercase;
   margin: 5px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  margin-top: 10px; }
 
 h3, ul li {
   font-size: 18px;
   margin: 0px;
   margin-bottom: 15px; }
 
+h3.problems, ul li.problems {
+  font-size: 20px;
+  color: #D92525;
+  text-transform: none; }
+
 h4 {
   font-size: 14px;
-  color: #D92525;
+  color: black;
   margin: 0;
   text-transform: none; }
 
@@ -36,7 +42,8 @@ p, a, form input, form textarea {
   font-family: ComfortaaRegular;
   font-size: 12px;
   color: black;
-  margin: 5px 0; }
+  margin: 5px 0;
+  line-height: 1.5; }
 
 a {
   text-decoration: none; }
@@ -55,22 +62,23 @@ ul {
     margin: 0 10px;
     font-size: 16px; }
 
-.desc {
+.desc, h3.problems, ul li.problems {
   font-family: ArchitectsDaughter;
   font-size: 14px;
   color: #D92525;
-  padding: 0px 5px; }
+  padding: 0px 5px;
+  text-align: center; }
 
 quote {
   color: #55B13D;
-  font-size: 30px;
-  font-size: 25px;
-  margin-bottom: 20px; }
+  font-size: 20px;
+  margin: 0px 5%;
+  margin-top: -5%; }
 
 .drop-down {
   width: 50px;
   height: 50px;
-  background-color: #55B13D;
+  background-color: white;
   -webkit-border-radius: 50px;
           border-radius: 50px;
   display: -webkit-box;
@@ -85,7 +93,7 @@ quote {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 10px;
+  margin-bottom: -40px;
   cursor: pointer; }
   .drop-down #line1, .drop-down #line2 {
     -webkit-transition: 1s;
@@ -95,7 +103,7 @@ quote {
             border-radius: 2px;
     width: 2px;
     height: 25px;
-    background-color: white;
+    background-color: #BFBFBF;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -119,7 +127,8 @@ quote {
     transition: 1s;
     -webkit-transform: translate(0px, 0px) rotate(45deg);
         -ms-transform: translate(0px, 0px) rotate(45deg);
-            transform: translate(0px, 0px) rotate(45deg); }
+            transform: translate(0px, 0px) rotate(45deg);
+    background-color: white; }
   .close #line2 {
     -webkit-transform: translate(-1px, 0px) rotate(-45deg);
         -ms-transform: translate(-1px, 0px) rotate(-45deg);
@@ -132,7 +141,7 @@ quote {
   text-transform: uppercase;
   -webkit-border-radius: 5px;
           border-radius: 5px;
-  font-size: 20px;
+  font-size: 18px;
   margin: 10px;
   cursor: pointer; }
 
@@ -144,47 +153,22 @@ quote {
 
 img {
   max-width: 100%;
-  height: auto; }
-
-.chart {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  text-align: center; }
-
-.chart canvas {
-  position: absolute;
-  top: 0;
-  left: 0; }
-
-.percent {
-  display: inline-block;
-  line-height: 150px;
-  z-index: 2;
-  font-size: 30px; }
-
-.percent:after {
-  content: '%';
-  margin-left: 0.1em;
-  font-size: .8em; }
-
-.red, .captionRed {
-  color: #D92525; }
-
-.green, .captionGreen {
-  color: #55B13D; }
-
-.captionRed {
-  margin: 18px 0; }
-
-.captionGreen {
-  margin: 18px 0; }
+  height: auto;
+  width: 45%;
+  -webkit-transition: -webkit-transform cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: -webkit-transform cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition: transform cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: transform cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: transform cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform cubic-bezier(0.25, 0.46, 0.45, 0.94); }
 
 .remodal-close {
   right: 1px; }
 
 #remodal-form {
   max-height: 550px; }
+
+.remodal {
+  padding-bottom: 10px; }
 
 form {
   display: -webkit-box;
@@ -205,6 +189,20 @@ form {
     margin: 10px 0;
     border: 0;
     border-bottom: 2px solid rgba(0, 0, 0, 0.2); }
+
+.before, .beforeGrey, section#office::before, section#contacts::before, section#about::before, section#inefficients::before, section#calendar::before {
+  content: '';
+  background: url(../img/svg/befor.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  margin-top: -107px;
+  width: 100%;
+  height: 93px; }
+
+.beforeGrey, section#office::before, section#contacts::before {
+  background: url(../img/svg/befor_grey.svg);
+  background-repeat: no-repeat;
+  background-position: bottom; }
 
 /*---------Variables*/
 /* -------------------------------- 
@@ -322,7 +320,7 @@ header {
     transition-property: transform;
     transition-property: transform, -webkit-transform; }
   .cd-nav-trigger::before {
-    background-color: #81c784;
+    background-color: #BFBFBF;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
@@ -386,7 +384,7 @@ header {
   width: 100%;
   padding: 80px 5%;
   z-index: 3;
-  background-color: #81c784;
+  background-color: #BFBFBF;
   overflow: auto;
   /* this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied */
   -webkit-overflow-scrolling: touch;
@@ -467,7 +465,7 @@ header {
   /* main rounded colored bg 1 */
   z-index: 2; }
   .cd-overlay-nav span {
-    background-color: #81c784; }
+    background-color: #BFBFBF; }
 
 .cd-overlay-content {
   /* main rounded colored bg 2 */
@@ -513,9 +511,11 @@ body {
   -o-transition: 1s;
   transition: 1s;
   padding: 0;
-  width: 100%; }
+  width: 100%;
+  height: auto;
+  background-color: #f8f8f8; }
 
-.wr, section#footer .row {
+.wr, section#footer .row, section#footer .rowserv {
   max-width: 960px;
   width: 100%;
   display: -webkit-box;
@@ -558,9 +558,10 @@ section {
   -webkit-background-size: cover;
           background-size: cover;
   background-repeat: no-repeat;
-  padding: 2% 0; }
+  padding: 20px 0px;
+  background-color: #f8f8f8; }
 
-.row {
+.row, .rowserv {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -571,53 +572,121 @@ section {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 20px 0px; }
 
-.row::after {
+.row::after, .rowserv::after {
   display: none; }
 
-.row::before {
+.row::before, .rowserv::before {
   display: none; }
 
 .rowtext {
   margin: 30px 5px; }
 
-.featuresRight, .featuresLeft, section#statistic .wr .content .row .item, section#statistic section#footer .row .content .row .item, section#footer section#statistic .row .content .row .item, section#statistic .wr .content .row .item:nth-child(2n) {
-  text-align: right;
-  margin: 20px; }
+.rowserv {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
-.featuresLeft, section#statistic .wr .content .row .item, section#statistic section#footer .row .content .row .item, section#footer section#statistic .row .content .row .item {
-  text-align: left; }
+.box {
+  background-color: white;
+  width: 500px; }
+
+.featuresRight, .featuresLeft {
+  margin: 20px;
+  text-align: left;
+  padding-right: 5%;
+  width: 100%; }
+
+.featuresLeft {
+  text-align: right;
+  padding-right: 0;
+  padding-left: 5%; }
 
 section#main {
-  background: url(../img/background.jpg);
-  -webkit-clip-path: polygon(100% 0, 100% 94%, 68% 100%, 0 93%, 0 0);
-          clip-path: polygon(100% 0, 100% 94%, 68% 100%, 0 93%, 0 0);
+  position: relative;
+  background: url(../bg.mp4);
   background-position: center;
-  height: 90vh;
+  height: 105vh;
   -webkit-background-size: cover;
-          background-size: cover; }
-  section#main .wr, section#main section#footer .row, section#footer section#main .row {
+          background-size: cover;
+  margin: 0;
+  padding-top: 0;
+  width: 100%;
+  overflow: hidden; }
+  section#main #back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -2;
+    background-color: black; }
+  section#main video {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    opacity: 0.5; }
+  section#main .wr, section#main section#footer .row, section#footer section#main .row, section#main section#footer .rowserv, section#footer section#main .rowserv {
+    height: 100%;
     margin: 0; }
-    section#main .wr .menu ul, section#main section#footer .row .menu ul, section#footer section#main .row .menu ul {
+    section#main .wr .menu ul, section#main section#footer .row .menu ul, section#footer section#main .row .menu ul, section#main section#footer .rowserv .menu ul, section#footer section#main .rowserv .menu ul {
       margin: 0;
       margin-top: 10px; }
+      section#main .wr .menu ul li a, section#main section#footer .row .menu ul li a, section#footer section#main .row .menu ul li a, section#main section#footer .rowserv .menu ul li a, section#footer section#main .rowserv .menu ul li a {
+        color: white;
+        -webkit-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s; }
+    section#main .wr .row, section#main section#footer .row .row, section#footer section#main .row .row, section#main section#footer .rowserv .row, section#footer section#main .rowserv .row, section#main .wr .rowserv, section#main section#footer .row .rowserv, section#footer section#main .row .rowserv, section#main section#footer .rowserv .rowserv, section#footer section#main .rowserv .rowserv {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+      margin-top: 20%;
+      margin-bottom: auto; }
+      section#main .wr .row #logo, section#main section#footer .row .row #logo, section#footer section#main .row .row #logo, section#main section#footer .rowserv .row #logo, section#footer section#main .rowserv .row #logo, section#main .wr .rowserv #logo, section#main section#footer .row .rowserv #logo, section#footer section#main .row .rowserv #logo, section#main section#footer .rowserv .rowserv #logo, section#footer section#main .rowserv .rowserv #logo {
+        width: 200px; }
+      section#main .wr .row h2, section#main section#footer .row .row h2, section#footer section#main .row .row h2, section#main section#footer .rowserv .row h2, section#footer section#main .rowserv .row h2, section#main .wr .rowserv h2, section#main section#footer .row .rowserv h2, section#footer section#main .row .rowserv h2, section#main section#footer .rowserv .rowserv h2, section#footer section#main .rowserv .rowserv h2, section#main .wr .row h3, section#main section#footer .row .row h3, section#footer section#main .row .row h3, section#main section#footer .rowserv .row h3, section#footer section#main .rowserv .row h3, section#main .wr .rowserv h3, section#main section#footer .row .rowserv h3, section#footer section#main .row .rowserv h3, section#main section#footer .rowserv .rowserv h3, section#footer section#main .rowserv .rowserv h3, section#main .wr .row ul li, ul section#main .wr .row li, section#main section#footer .row .row ul li, ul section#main section#footer .row .row li, section#footer section#main .row .row ul li, ul section#footer section#main .row .row li, section#main section#footer .rowserv .row ul li, ul section#main section#footer .rowserv .row li, section#footer section#main .rowserv .row ul li, ul section#footer section#main .rowserv .row li, section#main .wr .rowserv ul li, ul section#main .wr .rowserv li, section#main section#footer .row .rowserv ul li, ul section#main section#footer .row .rowserv li, section#footer section#main .row .rowserv ul li, ul section#footer section#main .row .rowserv li, section#main section#footer .rowserv .rowserv ul li, ul section#main section#footer .rowserv .rowserv li, section#footer section#main .rowserv .rowserv ul li, ul section#footer section#main .rowserv .rowserv li, section#main .wr .row h4, section#main section#footer .row .row h4, section#footer section#main .row .row h4, section#main section#footer .rowserv .row h4, section#footer section#main .rowserv .row h4, section#main .wr .rowserv h4, section#main section#footer .row .rowserv h4, section#footer section#main .row .rowserv h4, section#main section#footer .rowserv .rowserv h4, section#footer section#main .rowserv .rowserv h4 {
+        color: #D92525;
+        margin: 0;
+        margin-top: 1em; }
+
+.fade {
+  position: absolute; }
 
 section#about {
+  margin-top: -2%;
   background: none;
-  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 90%);
-          clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 90%);
-  padding: 5% 0%;
-  padding-top: 20px;
-  background-color: rgba(0, 0, 0, 0.02);
+  background-color: white;
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
@@ -630,110 +699,133 @@ section#about {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: height 4s;
-  -o-transition: height 4s;
-  transition: height 4s; }
-  section#about .wr, section#about section#footer .row, section#footer section#about .row {
+  -webkit-transition: ease 4s;
+  -o-transition: ease 4s;
+  transition: ease 4s; }
+  section#about .wr, section#about section#footer .row, section#footer section#about .row, section#about section#footer .rowserv, section#footer section#about .rowserv {
     margin: 0; }
-    section#about .wr .row .desc, section#about section#footer .row .row .desc, section#footer section#about .row .row .desc {
-      padding-bottom: 20px; }
+    section#about .wr .rowtext p, section#about section#footer .row .rowtext p, section#footer section#about .row .rowtext p, section#about section#footer .rowserv .rowtext p, section#footer section#about .rowserv .rowtext p, section#about .wr .rowtext a, section#about section#footer .row .rowtext a, section#footer section#about .row .rowtext a, section#about section#footer .rowserv .rowtext a, section#footer section#about .rowserv .rowtext a, section#about .wr .rowtext form input, form section#about .wr .rowtext input, section#about section#footer .row .rowtext form input, form section#about section#footer .row .rowtext input, section#footer section#about .row .rowtext form input, form section#footer section#about .row .rowtext input, section#about section#footer .rowserv .rowtext form input, form section#about section#footer .rowserv .rowtext input, section#footer section#about .rowserv .rowtext form input, form section#footer section#about .rowserv .rowtext input, section#about .wr .rowtext form textarea, form section#about .wr .rowtext textarea, section#about section#footer .row .rowtext form textarea, form section#about section#footer .row .rowtext textarea, section#footer section#about .row .rowtext form textarea, form section#footer section#about .row .rowtext textarea, section#about section#footer .rowserv .rowtext form textarea, form section#about section#footer .rowserv .rowtext textarea, section#footer section#about .rowserv .rowtext form textarea, form section#footer section#about .rowserv .rowtext textarea {
+      margin: 20px; }
   section#about #team {
     -webkit-transition: 0, 5s;
     -o-transition: 0, 5s;
     transition: 0, 5s;
     display: none; }
-
-.wrap {
-  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 95%);
-          clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 95%); }
-
-section#cargoowner .wr .row, section#cargoowner section#footer .row .row, section#footer section#cargoowner .row .row {
-  margin-top: 80px; }
-
-section#forwarder {
-  -webkit-clip-path: polygon(0% 0%, 100% 12%, 100% 88%, 0% 100%);
-          clip-path: polygon(0% 0%, 100% 12%, 100% 88%, 0% 100%);
-  padding: 8% 0;
-  background-color: rgba(0, 0, 0, 0.02); }
-
-section#driver {
-  -webkit-clip-path: polygon(0% 12%, 100% 0%, 100% 100%, 0% 88%);
-          clip-path: polygon(0% 12%, 100% 0%, 100% 100%, 0% 88%);
-  padding: 9% 0;
-  background-color: rgba(0, 0, 0, 0.02); }
-
-section#statistic {
-  -webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% 100%);
-          clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% 100%);
-  background: none;
-  background-color: rgba(0, 0, 0, 0.02);
-  padding-bottom: 40px; }
-  section#statistic .wr, section#statistic section#footer .row, section#footer section#statistic .row {
-    margin: 0;
-    margin-top: 100px; }
-    section#statistic .wr .content, section#statistic section#footer .row .content, section#footer section#statistic .row .content {
-      margin-top: 50px;
-      width: 90%;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
+    section#about #team .row, section#about #team .rowserv {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
-              flex-direction: column; }
-      section#statistic .wr .content .row, section#statistic section#footer .row .content .row, section#footer section#statistic .row .content .row {
-        margin-top: 40px;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      section#about #team .row ul, section#about #team .rowserv ul {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
         -webkit-flex-direction: row;
             -ms-flex-direction: row;
                 flex-direction: row;
-        -webkit-box-align: baseline;
-        -webkit-align-items: baseline;
-            -ms-flex-align: baseline;
-                align-items: baseline; }
-        section#statistic .wr .content .row .row, section#statistic section#footer .row .content .row .row, section#footer section#statistic .row .content .row .row {
-          margin-top: 30px;
-          margin-bottom: 30px;
-          display: -webkit-box;
-          display: -webkit-flex;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-pack: justify;
-          -webkit-justify-content: space-between;
-              -ms-flex-pack: justify;
-                  justify-content: space-between; }
-        section#statistic .wr .content .row .item, section#statistic section#footer .row .content .row .item, section#footer section#statistic .row .content .row .item {
-          display: -webkit-box;
-          display: -webkit-flex;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-          -webkit-flex-direction: column;
-              -ms-flex-direction: column;
-                  flex-direction: column;
-          width: 40%;
-          margin: 0; }
-          section#statistic .wr .content .row .item h3, section#statistic section#footer .row .content .row .item h3, section#footer section#statistic .row .content .row .item h3, section#statistic .wr .content .row .item ul li, ul section#statistic .wr .content .row .item li, section#statistic section#footer .row .content .row .item ul li, ul section#statistic section#footer .row .content .row .item li, section#footer section#statistic .row .content .row .item ul li, ul section#footer section#statistic .row .content .row .item li {
-            text-transform: none; }
-        section#statistic .wr .content .row .item:nth-child(2n), section#statistic section#footer .row .content .row .item:nth-child(2n), section#footer section#statistic .row .content .row .item:nth-child(2n) {
-          margin: 0; }
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin: 0; }
+        section#about #team .row ul li, section#about #team .rowserv ul li {
+          max-width: 200px; }
 
-section#contacts .wr .rowtext, section#contacts section#footer .row .rowtext, section#footer section#contacts .row .rowtext {
-  margin: 30px 5px 5px 5px; }
+.team {
+  width: 150px;
+  height: 150px;
+  margin: 30px;
+  margin-bottom: 5px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+  cursor: pointer; }
+  .team:hover {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+            transform: scale3d(1.1, 1.1, 1); }
 
-section#contacts .wr .btn, section#contacts section#footer .row .btn, section#footer section#contacts .row .btn, section#contacts .wr form button, form section#contacts .wr button, section#contacts section#footer .row form button, form section#contacts section#footer .row button, section#footer section#contacts .row form button, form section#footer section#contacts .row button {
-  margin-top: 10px;
-  margin-bottom: 10px; }
+section#cargoowner .desc, section#cargoowner h3.problems, section#cargoowner ul li.problems, ul section#cargoowner li.problems {
+  margin-bottom: 20px; }
+
+section#storage {
+  padding-bottom: 9%; }
+
+#lory, #links, #cloud, #calendarIco {
+  width: 80%;
+  max-width: 300px;
+  margin: 50px; }
+
+#calendarIco {
+  margin: 30px; }
+
+section#inefficients, section#office, section#calendar {
+  background-color: white;
+  -webkit-box-shadow: 3px 0px 20px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 3px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  padding-bottom: 5%; }
+  section#inefficients .wr, section#office .wr, section#calendar .wr, section#inefficients section#footer .row, section#footer section#inefficients .row, section#office section#footer .row, section#footer section#office .row, section#calendar section#footer .row, section#footer section#calendar .row, section#inefficients section#footer .rowserv, section#footer section#inefficients .rowserv, section#office section#footer .rowserv, section#footer section#office .rowserv, section#calendar section#footer .rowserv, section#footer section#calendar .rowserv {
+    margin: 10px; }
+    section#inefficients .wr h2, section#office .wr h2, section#calendar .wr h2, section#inefficients section#footer .row h2, section#footer section#inefficients .row h2, section#office section#footer .row h2, section#footer section#office .row h2, section#calendar section#footer .row h2, section#footer section#calendar .row h2, section#inefficients section#footer .rowserv h2, section#footer section#inefficients .rowserv h2, section#office section#footer .rowserv h2, section#footer section#office .rowserv h2, section#calendar section#footer .rowserv h2, section#footer section#calendar .rowserv h2, section#inefficients .wr h3, section#office .wr h3, section#calendar .wr h3, section#inefficients section#footer .row h3, section#footer section#inefficients .row h3, section#office section#footer .row h3, section#footer section#office .row h3, section#calendar section#footer .row h3, section#footer section#calendar .row h3, section#inefficients section#footer .rowserv h3, section#footer section#inefficients .rowserv h3, section#office section#footer .rowserv h3, section#footer section#office .rowserv h3, section#calendar section#footer .rowserv h3, section#footer section#calendar .rowserv h3, section#inefficients .wr ul li, ul section#inefficients .wr li, section#office .wr ul li, ul section#office .wr li, section#calendar .wr ul li, ul section#calendar .wr li, section#inefficients section#footer .row ul li, ul section#inefficients section#footer .row li, section#footer section#inefficients .row ul li, ul section#footer section#inefficients .row li, section#office section#footer .row ul li, ul section#office section#footer .row li, section#footer section#office .row ul li, ul section#footer section#office .row li, section#calendar section#footer .row ul li, ul section#calendar section#footer .row li, section#footer section#calendar .row ul li, ul section#footer section#calendar .row li, section#inefficients section#footer .rowserv ul li, ul section#inefficients section#footer .rowserv li, section#footer section#inefficients .rowserv ul li, ul section#footer section#inefficients .rowserv li, section#office section#footer .rowserv ul li, ul section#office section#footer .rowserv li, section#footer section#office .rowserv ul li, ul section#footer section#office .rowserv li, section#calendar section#footer .rowserv ul li, ul section#calendar section#footer .rowserv li, section#footer section#calendar .rowserv ul li, ul section#footer section#calendar .rowserv li, section#inefficients .wr h4, section#office .wr h4, section#calendar .wr h4, section#inefficients section#footer .row h4, section#footer section#inefficients .row h4, section#office section#footer .row h4, section#footer section#office .row h4, section#calendar section#footer .row h4, section#footer section#calendar .row h4, section#inefficients section#footer .rowserv h4, section#footer section#inefficients .rowserv h4, section#office section#footer .rowserv h4, section#footer section#office .rowserv h4, section#calendar section#footer .rowserv h4, section#footer section#calendar .rowserv h4 {
+      margin-top: -30px;
+      margin-bottom: 30px; }
+    section#inefficients .wr p, section#office .wr p, section#calendar .wr p, section#inefficients section#footer .row p, section#footer section#inefficients .row p, section#office section#footer .row p, section#footer section#office .row p, section#calendar section#footer .row p, section#footer section#calendar .row p, section#inefficients section#footer .rowserv p, section#footer section#inefficients .rowserv p, section#office section#footer .rowserv p, section#footer section#office .rowserv p, section#calendar section#footer .rowserv p, section#footer section#calendar .rowserv p, section#inefficients .wr a, section#office .wr a, section#calendar .wr a, section#inefficients section#footer .row a, section#footer section#inefficients .row a, section#office section#footer .row a, section#footer section#office .row a, section#calendar section#footer .row a, section#footer section#calendar .row a, section#inefficients section#footer .rowserv a, section#footer section#inefficients .rowserv a, section#office section#footer .rowserv a, section#footer section#office .rowserv a, section#calendar section#footer .rowserv a, section#footer section#calendar .rowserv a, section#inefficients .wr form input, form section#inefficients .wr input, section#office .wr form input, form section#office .wr input, section#calendar .wr form input, form section#calendar .wr input, section#inefficients section#footer .row form input, form section#inefficients section#footer .row input, section#footer section#inefficients .row form input, form section#footer section#inefficients .row input, section#office section#footer .row form input, form section#office section#footer .row input, section#footer section#office .row form input, form section#footer section#office .row input, section#calendar section#footer .row form input, form section#calendar section#footer .row input, section#footer section#calendar .row form input, form section#footer section#calendar .row input, section#inefficients section#footer .rowserv form input, form section#inefficients section#footer .rowserv input, section#footer section#inefficients .rowserv form input, form section#footer section#inefficients .rowserv input, section#office section#footer .rowserv form input, form section#office section#footer .rowserv input, section#footer section#office .rowserv form input, form section#footer section#office .rowserv input, section#calendar section#footer .rowserv form input, form section#calendar section#footer .rowserv input, section#footer section#calendar .rowserv form input, form section#footer section#calendar .rowserv input, section#inefficients .wr form textarea, form section#inefficients .wr textarea, section#office .wr form textarea, form section#office .wr textarea, section#calendar .wr form textarea, form section#calendar .wr textarea, section#inefficients section#footer .row form textarea, form section#inefficients section#footer .row textarea, section#footer section#inefficients .row form textarea, form section#footer section#inefficients .row textarea, section#office section#footer .row form textarea, form section#office section#footer .row textarea, section#footer section#office .row form textarea, form section#footer section#office .row textarea, section#calendar section#footer .row form textarea, form section#calendar section#footer .row textarea, section#footer section#calendar .row form textarea, form section#footer section#calendar .row textarea, section#inefficients section#footer .rowserv form textarea, form section#inefficients section#footer .rowserv textarea, section#footer section#inefficients .rowserv form textarea, form section#footer section#inefficients .rowserv textarea, section#office section#footer .rowserv form textarea, form section#office section#footer .rowserv textarea, section#footer section#office .rowserv form textarea, form section#footer section#office .rowserv textarea, section#calendar section#footer .rowserv form textarea, form section#calendar section#footer .rowserv textarea, section#footer section#calendar .rowserv form textarea, form section#footer section#calendar .rowserv textarea {
+      max-width: 750px; }
+  section#inefficients #capacity, section#office #capacity, section#calendar #capacity {
+    font-size: 24px;
+    text-transform: none; }
+
+section#office {
+  background-color: #f8f8f8; }
+  section#office .wr .row, section#office section#footer .row .row, section#footer section#office .row .row, section#office section#footer .rowserv .row, section#footer section#office .rowserv .row, section#office .wr .rowserv, section#office section#footer .row .rowserv, section#footer section#office .row .rowserv, section#office section#footer .rowserv .rowserv, section#footer section#office .rowserv .rowserv {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+
+section#calendar {
+  background-color: white; }
+
+section#contacts {
+  -webkit-box-shadow: 3px 0px 20px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 3px 0px 20px 0px rgba(0, 0, 0, 0.3); }
+  section#contacts .wr .rowtext, section#contacts section#footer .row .rowtext, section#footer section#contacts .row .rowtext, section#contacts section#footer .rowserv .rowtext, section#footer section#contacts .rowserv .rowtext {
+    margin: 0; }
+    section#contacts .wr .rowtext h2, section#contacts section#footer .row .rowtext h2, section#footer section#contacts .row .rowtext h2, section#contacts section#footer .rowserv .rowtext h2, section#footer section#contacts .rowserv .rowtext h2, section#contacts .wr .rowtext h3, section#contacts section#footer .row .rowtext h3, section#footer section#contacts .row .rowtext h3, section#contacts section#footer .rowserv .rowtext h3, section#footer section#contacts .rowserv .rowtext h3, section#contacts .wr .rowtext ul li, ul section#contacts .wr .rowtext li, section#contacts section#footer .row .rowtext ul li, ul section#contacts section#footer .row .rowtext li, section#footer section#contacts .row .rowtext ul li, ul section#footer section#contacts .row .rowtext li, section#contacts section#footer .rowserv .rowtext ul li, ul section#contacts section#footer .rowserv .rowtext li, section#footer section#contacts .rowserv .rowtext ul li, ul section#footer section#contacts .rowserv .rowtext li, section#contacts .wr .rowtext h4, section#contacts section#footer .row .rowtext h4, section#footer section#contacts .row .rowtext h4, section#contacts section#footer .rowserv .rowtext h4, section#footer section#contacts .rowserv .rowtext h4 {
+      margin-top: -20px; }
+  section#contacts .wr .btn, section#contacts section#footer .row .btn, section#footer section#contacts .row .btn, section#contacts section#footer .rowserv .btn, section#footer section#contacts .rowserv .btn, section#contacts .wr form button, form section#contacts .wr button, section#contacts section#footer .row form button, form section#contacts section#footer .row button, section#footer section#contacts .row form button, form section#footer section#contacts .row button, section#contacts section#footer .rowserv form button, form section#contacts section#footer .rowserv button, section#footer section#contacts .rowserv form button, form section#footer section#contacts .rowserv button {
+    margin-top: 30px;
+    margin-bottom: 10px; }
 
 section#footer {
   background: none;
   padding: 0; }
-  section#footer .row {
-    margin: 10px;
+  section#footer .row, section#footer .rowserv {
+    mix-width: 80px;
+    padding: 20px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
@@ -743,6 +835,26 @@ section#footer {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+    section#footer .row .item, section#footer .rowserv .item {
+      margin: auto;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      section#footer .row .item .img, section#footer .rowserv .item .img {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+        background-position: center; }
 
 .headhesive {
   -webkit-transition: 1s;
@@ -763,7 +875,7 @@ section#footer {
           align-self: flex-start;
   margin: auto;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   -webkit-transform: translateY(-50px);
       -ms-transform: translateY(-50px);
           transform: translateY(-50px);
@@ -783,10 +895,13 @@ section#footer {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    background-color: #81c784;
+    background-color: #BFBFBF;
     font-size: 12px; }
     .headhesive ul a:hover {
-      color: white; }
+      color: #D92525;
+      -webkit-transition: 500ms;
+      -o-transition: 500ms;
+      transition: 500ms; }
 
 .headhesive--stick {
   -webkit-transition: 1s;
@@ -812,89 +927,155 @@ section#footer {
 .remodal-wrapper {
   z-index: 7; }
 
+#remodal-form {
+  padding-bottom: 15px;
+  -webkit-border-radius: 18px;
+          border-radius: 18px; }
+
+.clc-3 {
+  fill: #de4444;
+  stroke: #de4444;
+  -webkit-animation: scale 1s ease infinite alternate-reverse;
+          animation: scale 1s ease infinite alternate-reverse; }
+
+@-webkit-keyframes scale {
+  0% {
+    stroke-width: 0px; }
+  100% {
+    stroke-width: 15px; } }
+
+@keyframes scale {
+  0% {
+    stroke-width: 0px; }
+  100% {
+    stroke-width: 15px; } }
+
+.cll-2 {
+  -webkit-animation: highlight infinite;
+          animation: highlight infinite;
+  -webkit-animation-duration: 40s;
+          animation-duration: 40s; }
+
+@-webkit-keyframes highlight {
+  0% {
+    stroke: #de4545;
+    stroke-width: 0px; }
+  100% {
+    stroke-width: 7px;
+    stroke: rgba(222, 69, 69, 0); } }
+
+@keyframes highlight {
+  0% {
+    stroke: #de4545;
+    stroke-width: 0px; }
+  100% {
+    stroke-width: 7px;
+    stroke: rgba(222, 69, 69, 0); } }
+
 @media only screen and (max-width: 800px) {
   .menu {
     display: none; }
-  .featuresRight, .featuresLeft, section#statistic .wr .content .row .item, section#statistic section#footer .row .content .row .item, section#footer section#statistic .row .content .row .item, section#statistic .wr .content .row .item:nth-child(2n) {
+  img {
+    width: 100%;
+    margin-bottom: 30px; }
+  .rowserv {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .row, .rowserv {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .featuresRight, .featuresLeft {
     text-align: center;
-    margin: 20px; }
-  .featuresLeft, section#statistic .wr .content .row .item, section#statistic section#footer .row .content .row .item, section#footer section#statistic .row .content .row .item {
+    margin: 0px;
+    padding: 0; }
+  .featuresLeft {
+    margin: 0px;
+    padding: 0;
     text-align: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
     -webkit-flex-direction: column-reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse; }
-  section .wr .row, section#footer .row .row {
+  section .wr .row, section#footer .row .row, section#footer .rowserv .row, section .wr .rowserv, section#footer .row .rowserv, section#footer .rowserv .rowserv {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column; }
-  section#forwarder .row {
+  section#main {
+    height: 101vh; }
+  section#forwarder .row, section#forwarder .rowserv {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
     -webkit-flex-direction: column-reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse; }
-  section#driver .row {
+  section#driver .row, section#driver .rowserv {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
     -webkit-flex-direction: column-reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse; }
-  section#statistic .wr .content, section#statistic section#footer .row .content, section#footer section#statistic .row .content {
-    width: 100%;
-    margin-top: 10px; }
-    section#statistic .wr .content .row, section#statistic section#footer .row .content .row, section#footer section#statistic .row .content .row {
-      padding-bottom: 20px;
-      margin: 0;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      section#statistic .wr .content .row .item, section#statistic section#footer .row .content .row .item, section#footer section#statistic .row .content .row .item {
-        margin: 30px 0px;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        width: auto;
-        margin-bottom: 50px; }
-      section#statistic .wr .content .row .item:nth-child(2n), section#statistic section#footer .row .content .row .item:nth-child(2n), section#footer section#statistic .row .content .row .item:nth-child(2n) {
-        text-align: center;
-        margin: 0px; }
-      section#statistic .wr .content .row .row, section#statistic section#footer .row .content .row .row, section#footer section#statistic .row .content .row .row {
-        -webkit-justify-content: space-around;
-            -ms-flex-pack: distribute;
-                justify-content: space-around;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: row;
-            -ms-flex-direction: row;
-                flex-direction: row; } }
+  img.team {
+    width: 100px;
+    height: 100px;
+    margin: 15px; }
+  quote {
+    font-size: 15px;
+    margin-top: -3%; }
+  h2, h3, ul li, h4 {
+    font-size: 20px; }
+  h4 {
+    font-size: 15px; } }
 
-@media only screen and (max-width: 400px) {
-  .chart {
-    position: relative;
-    width: 130px;
-    height: 130px; }
-  .chart canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 130px;
-    height: 130px; }
-  .percent {
-    display: inline-block;
-    line-height: 130px;
-    z-index: 2;
-    font-size: 30px; }
-  .percent:after {
-    content: '%';
-    margin-left: 0.1em;
-    font-size: .8em; }
-  .item {
-    margin: 0; } }
+@media only screen and (max-width: 500px) {
+  #lory, #links, #cloud, #calendarIco {
+    margin: 20px 10px; }
+  .wr, section#footer .row, section#footer .rowserv {
+    padding: 0px 10px; }
+  #calendarIco {
+    margin: 30px; }
+  section#main {
+    height: 98vh; }
+  section#inefficients .wr h2, section#office .wr h2, section#calendar .wr h2, section#inefficients section#footer .row h2, section#footer section#inefficients .row h2, section#office section#footer .row h2, section#footer section#office .row h2, section#calendar section#footer .row h2, section#footer section#calendar .row h2, section#inefficients section#footer .rowserv h2, section#footer section#inefficients .rowserv h2, section#office section#footer .rowserv h2, section#footer section#office .rowserv h2, section#calendar section#footer .rowserv h2, section#footer section#calendar .rowserv h2, section#inefficients .wr h3, section#office .wr h3, section#calendar .wr h3, section#inefficients section#footer .row h3, section#footer section#inefficients .row h3, section#office section#footer .row h3, section#footer section#office .row h3, section#calendar section#footer .row h3, section#footer section#calendar .row h3, section#inefficients section#footer .rowserv h3, section#footer section#inefficients .rowserv h3, section#office section#footer .rowserv h3, section#footer section#office .rowserv h3, section#calendar section#footer .rowserv h3, section#footer section#calendar .rowserv h3, section#inefficients .wr ul li, ul section#inefficients .wr li, section#office .wr ul li, ul section#office .wr li, section#calendar .wr ul li, ul section#calendar .wr li, section#inefficients section#footer .row ul li, ul section#inefficients section#footer .row li, section#footer section#inefficients .row ul li, ul section#footer section#inefficients .row li, section#office section#footer .row ul li, ul section#office section#footer .row li, section#footer section#office .row ul li, ul section#footer section#office .row li, section#calendar section#footer .row ul li, ul section#calendar section#footer .row li, section#footer section#calendar .row ul li, ul section#footer section#calendar .row li, section#inefficients section#footer .rowserv ul li, ul section#inefficients section#footer .rowserv li, section#footer section#inefficients .rowserv ul li, ul section#footer section#inefficients .rowserv li, section#office section#footer .rowserv ul li, ul section#office section#footer .rowserv li, section#footer section#office .rowserv ul li, ul section#footer section#office .rowserv li, section#calendar section#footer .rowserv ul li, ul section#calendar section#footer .rowserv li, section#footer section#calendar .rowserv ul li, ul section#footer section#calendar .rowserv li, section#inefficients .wr h4, section#office .wr h4, section#calendar .wr h4, section#inefficients section#footer .row h4, section#footer section#inefficients .row h4, section#office section#footer .row h4, section#footer section#office .row h4, section#calendar section#footer .row h4, section#footer section#calendar .row h4, section#inefficients section#footer .rowserv h4, section#footer section#inefficients .rowserv h4, section#office section#footer .rowserv h4, section#footer section#office .rowserv h4, section#calendar section#footer .rowserv h4, section#footer section#calendar .rowserv h4 {
+    padding: 15px; }
+  section#footer iframe {
+    height: 150px; }
+  section#footer .row, section#footer .rowserv {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    section#footer .row .item, section#footer .rowserv .item {
+      margin: 5px; }
+  section#contacts {
+    -webkit-box-shadow: 3px 0px 20px 0px rgba(0, 0, 0, 0.3);
+            box-shadow: 3px 0px 20px 0px rgba(0, 0, 0, 0.3); }
+    section#contacts .wr .rowtext h2, section#contacts section#footer .row .rowtext h2, section#footer section#contacts .row .rowtext h2, section#contacts section#footer .rowserv .rowtext h2, section#footer section#contacts .rowserv .rowtext h2, section#contacts .wr .rowtext h3, section#contacts section#footer .row .rowtext h3, section#footer section#contacts .row .rowtext h3, section#contacts section#footer .rowserv .rowtext h3, section#footer section#contacts .rowserv .rowtext h3, section#contacts .wr .rowtext ul li, ul section#contacts .wr .rowtext li, section#contacts section#footer .row .rowtext ul li, ul section#contacts section#footer .row .rowtext li, section#footer section#contacts .row .rowtext ul li, ul section#footer section#contacts .row .rowtext li, section#contacts section#footer .rowserv .rowtext ul li, ul section#contacts section#footer .rowserv .rowtext li, section#footer section#contacts .rowserv .rowtext ul li, ul section#footer section#contacts .rowserv .rowtext li, section#contacts .wr .rowtext h4, section#contacts section#footer .row .rowtext h4, section#footer section#contacts .row .rowtext h4, section#contacts section#footer .rowserv .rowtext h4, section#footer section#contacts .rowserv .rowtext h4 {
+      margin-top: -10px; }
+  li {
+    margin: 0px; } }

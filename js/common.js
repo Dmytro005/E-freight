@@ -1,70 +1,30 @@
-var i = 1;
-var options = {
-    offset: 200
-}
-var size = 150;
-if ($("body").width() <= 500) {
-    var size = 130;
-}
-$(window).on('scroll', function () {
-
-    var id = "#chart" + i;
-
-    if ($(id).css('visibility') == "visible") {
-
-        if (i & 1) { //check if our chrt id number is coupled
-            $(id).easyPieChart({
-                size: size,
-                barColor: '#D92525',
-                trackColor: '#E8E8E8',
-                scaleColor: false,
-                lineWidth: 5,
-                trackWidth: 5,
-                lineCap: 'round',
-                animate: {
-                    duration: 5000,
-                    enabled: true
-                },
-                onStep: function (from, to, percent) {
-                    $(this.el).find('.percent').text(Math.round(percent));
-                }
-            });
-            i += 1;
-        } else {
-            $(id).easyPieChart({
-                size: size,
-                barColor: '#55b13d',
-                trackColor: '#E8E8E8',
-                scaleColor: false,
-                lineWidth: 5,
-                trackWidth: 5,
-                trackWidth: 5,
-                lineCap: 'round',
-                animate: {
-                    duration: 5000,
-                    enabled: true
-                },
-                onStep: function (from, to, percent) {
-                    $(this.el).find('.percent').text(Math.round(percent));
-                }
-            });
-            i += 1;
-        }
+///Disable mobile smooth scroll om mobile
+if ($("body").width() >= 800) {
+    var options = {
+        offset: 200
     }
-});
-
-$("a").mPageScroll2id();
+    $("a").mPageScroll2id();
+}
+///Change data-wow-offset on mobile
+if ($("body").width() <= 800) {
+    console.log("wow-mobile");
+    $(".wow").attr("data-wow-offset", "200");
+}
 
 $(".chart").addClass("fadeIn");
 $(".chart").attr("data-wow-offset", "150");
-
+///Drop Down Team
 $(".drop-down").click(function () {
-    $("#team").fadeToggle("lineal");
+    $("#team").fadeToggle();
     $(this).toggleClass("close");
-    
     $("#about").toggleClass('.wrap');
+    if (s.isMobile() == true) {
+
+        console.log("is mobile");
+        s.destroy();
+    }
 })
-/////////////////MENU
+/////////////////MENU mobile
 jQuery(document).ready(function ($) {
     var overlayNav = $('.cd-overlay-nav'),
         overlayContent = $('.cd-overlay-content'),
@@ -161,24 +121,79 @@ jQuery(document).ready(function ($) {
             left: -(diameterValue / 2) + 'px',
         }, 0);
     }
-    
-    $(".click-menu").click(function(){
+
+    $(".click-menu").click(function () {
         Close();
     })
-    
 
-if ($("body").width() >= 850) {
+
+    if ($("body").width() >= 850) {
         var header = new Headhesive('.menu', options);
-}
+    }
 });
 
-//if($(".cd-primary-nav.fade-in:visible")){
-//    $(body)
+///SvgAnimation
+var checkLory = true;
+var checkCalendar = true;
+var checkCloud = true;
+$(window).ready(function () {
+    $(".img").css("background-position", "center");
+    console.log($("#loryBox").css("visibility"));
+
+    $(window).on("scroll", function () {
+
+        if ($("#loryBox").css("visibility") == "visible" && checkLory == true) {
+
+            $("#per").css("transition", "height 1s")
+            $("#per").delay(500);
+            $("#per").velocity({
+                height: 125
+            });
+
+            checkLory = false;
+        }
+
+        if ($("#calendarBox").css("visibility") == "visible" && checkCalendar == true) {
+
+            $(".cln-6").css("transition", "1s ease 1s");
+
+            $(".cln-6").each(function (i) {
+
+                setTimeout(function () {
+
+                    $(".cln-6").eq(i).velocity({
+                        stroke: "#de4444"
+                    }, 100 * i)
+                })
+            });
+
+            checkCalendar = false;
+        }
+
+    })
+
+});
+/////PLay Video
+//function Play() {
+//    $('video').get(0).play();
+//    //    alert("Play");
 //}
-//if ($("body").width() <= 500 ) {
-//        
-//}
-/////Menu
+//
+//$("#play").on("click", function () {
+//    Play();
+//})
+//Parallax
+$("img.motion").attr("data-bottom-top", "transform:translate(0,-40px)");
+$("img.motion").attr("data-top-bottom", "transform:translate(0,100px)");
+
+var video = document.getElementById('video');
+//var main = document.getElementById('main');
+//main.addEventListener('click', function () {
+//    video.play();
+//}, false);
+document.addEventListener("DOMContentLoaded", function(event) {
+      video.play();
+  });
 
 //////Form 
 //var inst = $('[data-remodal-id=form]').remodal();
