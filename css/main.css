@@ -1,55 +1,52 @@
 @font-face {
-  font-family: "ComfortaaRegular";
-  src: url("../fonts/Comfortaa-Regular.eot?") format("eot"), url("../fonts/Comfortaa-Regular.woff") format("woff"), url("../fonts/Comfortaa-Regular.ttf") format("truetype");
+  font-family: "Ubuntu-Light";
+  src: url("../fonts/Ubuntu-Light/Ubuntu-Light.eot?") format("eot"), url("../fonts/Ubuntu-Light/Ubuntu-Light.woff") format("woff"), url("../fonts/Ubuntu-Light/Ubuntu-Light.ttf") format("truetype");
   font-weight: normal; }
 
 @font-face {
-  font-family: "ComfortaaBold";
-  src: url("../fonts/Comfortaa-Bold.eot?") format("eot"), url("../fonts/Comfortaa-Bold.woff") format("woff"), url("../fonts/Comfortaa-Bold.ttf") format("truetype");
+  font-family: "SourceSansPro-Regular";
+  src: url("../fonts/SourceSansPro-Regular/SourceSansPro-Regular.eot?") format("eot"), url("../fonts/SourceSansPro-Regular/SourceSansPro-Regular.woff") format("woff"), url("../fonts/SourceSansPro-Regular/SourceSansPro-Regular.ttf") format("truetype");
   font-weight: bold; }
 
 @font-face {
-  font-family: "ArchitectsDaughter";
-  src: url("../fonts/ArchitectsDaughter.eot?") format("eot"), url("../fonts/ArchitectsDaughter.woff") format("woff"), url("../fonts/ArchitectsDaughter.ttf") format("truetype");
+  font-family: "SourceSansPro-Light";
+  src: url("../fonts/SourceSansPro-Light/SourceSansPro-Light.eot?") format("eot"), url("../fonts/SourceSansPro-Light/SourceSansPro-Light.woff") format("woff"), url("../fonts/SourceSansPro-Light/SourceSansPro-Light.ttf") format("truetype");
   font-weight: bold; }
 
-h2, h3, ul li, h4 {
-  font-family: ComfortaaBold;
-  color: #55B13D;
-  font-size: 30px;
+h2, h3, ul li {
+  font-family: Ubuntu-Light;
+  color: #C23934;
+  font-size: 25px;
   text-transform: uppercase;
   margin: 5px;
   margin-bottom: 0;
   margin-top: 10px; }
 
 h3, ul li {
+  color: black;
   font-size: 18px;
   margin: 0px;
+  padding: 0;
   margin-bottom: 15px; }
 
-h3.problems, ul li.problems {
-  font-size: 20px;
-  color: #D92525;
-  text-transform: none; }
-
 h4 {
-  font-size: 14px;
-  color: black;
+  font-family: SourceSansPro-Light;
+  font-size: 16px;
+  color: #C23934;
   margin: 0;
   text-transform: none; }
 
 p, a, form input, form textarea {
-  font-family: ComfortaaRegular;
-  font-size: 12px;
+  font-family: SourceSansPro-Light;
+  font-size: 15px;
   color: black;
-  margin: 5px 0;
-  line-height: 1.5; }
+  margin: 5px 0; }
 
 a {
   text-decoration: none; }
 
 a:hover {
-  color: #55B13D; }
+  color: #52BE7F; }
 
 ul {
   list-style: none;
@@ -61,30 +58,26 @@ ul {
   ul li {
     margin: 0 10px;
     font-size: 16px; }
-
-.desc, h3.problems, ul li.problems {
-  font-family: ArchitectsDaughter;
-  font-size: 14px;
-  color: #D92525;
-  padding: 0px 5px;
-  text-align: center; }
-
-quote {
-  color: #55B13D;
-  font-size: 20px;
-  margin: 0px 5%;
-  margin-top: -5%; }
+  ul:after {
+    content: none;
+    display: none; }
+  ul:before {
+    content: none;
+    display: none; }
 
 .drop-down {
-  width: 50px;
-  height: 50px;
-  background-color: white;
-  -webkit-border-radius: 50px;
-          border-radius: 50px;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  width: 45px;
+  height: 45px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -93,82 +86,85 @@ quote {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: -40px;
   cursor: pointer; }
-  .drop-down #line1, .drop-down #line2 {
+  .drop-down #line1, .drop-down #line2, .drop-down #line3 {
     -webkit-transition: 1s;
     -o-transition: 1s;
     transition: 1s;
-    -webkit-border-radius: 2px;
-            border-radius: 2px;
     width: 2px;
-    height: 25px;
-    background-color: #BFBFBF;
+    height: 10px;
+    background-color: black;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-transform: translate(7px, 0px) rotate(30deg);
-        -ms-transform: translate(7px, 0px) rotate(30deg);
-            transform: translate(7px, 0px) rotate(30deg); }
+    -webkit-transform: translate(4px, 0px) rotate(45deg);
+        -ms-transform: translate(4px, 0px) rotate(45deg);
+            transform: translate(4px, 0px) rotate(45deg); }
   .drop-down #line2 {
-    -webkit-transform: translate(-7px, 0px) rotate(-30deg);
-        -ms-transform: translate(-7px, 0px) rotate(-30deg);
-            transform: translate(-7px, 0px) rotate(-30deg); }
+    -webkit-transform: translate(-4px, 0px) rotate(-45deg);
+        -ms-transform: translate(-4px, 0px) rotate(-45deg);
+            transform: translate(-4px, 0px) rotate(-45deg); }
+  .drop-down #line3 {
+    -webkit-transform: translate(-3px, -5px) rotate(0);
+        -ms-transform: translate(-3px, -5px) rotate(0);
+            transform: translate(-3px, -5px) rotate(0);
+    height: 14px; }
 
 .close {
-  background-color: #D92525;
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s; }
-  .close #line1, .close #line2 {
-    -webkit-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
-    -webkit-transform: translate(0px, 0px) rotate(45deg);
-        -ms-transform: translate(0px, 0px) rotate(45deg);
-            transform: translate(0px, 0px) rotate(45deg);
-    background-color: white; }
+  .close #line1, .close #line2, .close #line3 {
+    background-color: #BFBFBF;
+    -webkit-transform: translate(4px, -10px) rotate(135deg);
+        -ms-transform: translate(4px, -10px) rotate(135deg);
+            transform: translate(4px, -10px) rotate(135deg); }
   .close #line2 {
-    -webkit-transform: translate(-1px, 0px) rotate(-45deg);
-        -ms-transform: translate(-1px, 0px) rotate(-45deg);
-            transform: translate(-1px, 0px) rotate(-45deg); }
+    -webkit-transform: translate(-4px, -10px) rotate(-135deg);
+        -ms-transform: translate(-4px, -10px) rotate(-135deg);
+            transform: translate(-4px, -10px) rotate(-135deg); }
+  .close #line3 {
+    -webkit-transform: translate(-3px, -5px) rotate(0);
+        -ms-transform: translate(-3px, -5px) rotate(0);
+            transform: translate(-3px, -5px) rotate(0); }
 
 .btn, form button {
-  background: #55B13D;
+  background: #52BE7F;
   color: white;
+  font-family: SourceSansPro-Regular;
   padding: 10px 20px;
   text-transform: uppercase;
   -webkit-border-radius: 5px;
           border-radius: 5px;
-  font-size: 18px;
+  font-size: 12px;
   margin: 10px;
   cursor: pointer; }
 
 .btn:hover, form button:hover {
-  background-color: #D92525;
+  background-color: #C23934;
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s; }
-
-img {
-  max-width: 100%;
-  height: auto;
-  width: 45%;
-  -webkit-transition: -webkit-transform cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  transition: -webkit-transform cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  -o-transition: transform cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  transition: transform cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  transition: transform cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform cubic-bezier(0.25, 0.46, 0.45, 0.94); }
 
 .remodal-close {
   right: 1px; }
 
 #remodal-form {
-  max-height: 550px; }
+  max-height: 550px;
+  max-width: 400px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(128, 128, 128, 0.48);
+          box-shadow: 0px 0px 20px 0px rgba(128, 128, 128, 0.48); }
+
+.remodal-overlay {
+  background-color: rgba(222, 222, 222, 0.76); }
 
 .remodal {
-  padding-bottom: 10px; }
+  padding-bottom: 5px; }
+  .remodal h2, .remodal h3, .remodal ul li, ul .remodal li {
+    margin: 5px; }
 
 form {
   display: -webkit-box;
@@ -188,21 +184,10 @@ form {
     width: 99%;
     margin: 10px 0;
     border: 0;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.2); }
-
-.before, .beforeGrey, section#office::before, section#contacts::before, section#about::before, section#inefficients::before, section#calendar::before {
-  content: '';
-  background: url(../img/svg/befor.svg);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  margin-top: -107px;
-  width: 100%;
-  height: 93px; }
-
-.beforeGrey, section#office::before, section#contacts::before {
-  background: url(../img/svg/befor_grey.svg);
-  background-repeat: no-repeat;
-  background-position: bottom; }
+    border: 1.2px solid rgba(0, 0, 0, 0.2);
+    padding: 5px; }
+  form textarea {
+    resize: none; }
 
 /*---------Variables*/
 /* -------------------------------- 
@@ -269,7 +254,7 @@ header {
     display: inline-block;
     width: 18px;
     height: 3px;
-    background-color: #ffffff;
+    background-color: white;
     z-index: 10; }
     .cd-nav-trigger .cd-icon::before, .cd-nav-trigger .cd-icon:after {
       /* upper and lower lines of the menu icon */
@@ -278,7 +263,7 @@ header {
       right: 0;
       width: 100%;
       height: 100%;
-      background-color: #ffffff;
+      background-color: white;
       /* Force Hardware Acceleration in WebKit */
       -webkit-transform: translateZ(0);
       -ms-transform: translateZ(0);
@@ -503,7 +488,6 @@ header {
       line-height: 1.8; } }
 
 body {
-  background-color: white;
   font-family: 'ComfortaaRegular', cursive;
   font-size: 52px;
   margin: 0;
@@ -512,11 +496,10 @@ body {
   transition: 1s;
   padding: 0;
   width: 100%;
-  height: auto;
-  background-color: #f8f8f8; }
+  height: auto; }
 
-.wr, section#footer .row, section#footer .rowserv {
-  max-width: 960px;
+.wr {
+  max-width: 1000px;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -535,7 +518,8 @@ body {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center; }
+  text-align: center;
+  padding: 0px 20px; }
 
 section {
   display: -webkit-box;
@@ -561,7 +545,7 @@ section {
   padding: 20px 0px;
   background-color: #f8f8f8; }
 
-.row, .rowserv {
+.row {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -582,47 +566,27 @@ section {
           justify-content: space-between;
   margin: 20px 0px; }
 
-.row::after, .rowserv::after {
+.row::after {
   display: none; }
 
-.row::before, .rowserv::before {
+.row::before {
   display: none; }
 
 .rowtext {
   margin: 30px 5px; }
 
-.rowserv {
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-
-.box {
-  background-color: white;
-  width: 500px; }
-
-.featuresRight, .featuresLeft {
-  margin: 20px;
-  text-align: left;
-  padding-right: 5%;
-  width: 100%; }
-
-.featuresLeft {
-  text-align: right;
-  padding-right: 0;
-  padding-left: 5%; }
+img {
+  width: inherit; }
 
 section#main {
   position: relative;
-  background: url(../bg.mp4);
-  background-position: center;
-  height: 105vh;
-  -webkit-background-size: cover;
-          background-size: cover;
+  height: 100vh;
   margin: 0;
   padding-top: 0;
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%); }
   section#main #back {
     width: 100%;
     height: 100%;
@@ -643,18 +607,77 @@ section#main {
     height: auto;
     overflow: hidden;
     opacity: 0.5; }
-  section#main .wr, section#main section#footer .row, section#footer section#main .row, section#main section#footer .rowserv, section#footer section#main .rowserv {
+  section#main .wr {
     height: 100%;
     margin: 0; }
-    section#main .wr .menu ul, section#main section#footer .row .menu ul, section#footer section#main .row .menu ul, section#main section#footer .rowserv .menu ul, section#footer section#main .rowserv .menu ul {
-      margin: 0;
-      margin-top: 10px; }
-      section#main .wr .menu ul li a, section#main section#footer .row .menu ul li a, section#footer section#main .row .menu ul li a, section#main section#footer .rowserv .menu ul li a, section#footer section#main .rowserv .menu ul li a {
-        color: white;
-        -webkit-transition: 1s;
-        -o-transition: 1s;
-        transition: 1s; }
-    section#main .wr .row, section#main section#footer .row .row, section#footer section#main .row .row, section#main section#footer .rowserv .row, section#footer section#main .rowserv .row, section#main .wr .rowserv, section#main section#footer .row .rowserv, section#footer section#main .row .rowserv, section#main section#footer .rowserv .rowserv, section#footer section#main .rowserv .rowserv {
+    section#main .wr .box {
+      background: none;
+      width: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin-top: 20px; }
+      section#main .wr .box:after {
+        content: none;
+        display: none; }
+      section#main .wr .box:before {
+        content: none;
+        display: none; }
+      section#main .wr .box #logo {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        height: 100px;
+        width: auto; }
+      section#main .wr .box .menu {
+        -webkit-align-self: flex-start;
+            -ms-flex-item-align: start;
+                align-self: flex-start; }
+        section#main .wr .box .menu ul {
+          margin: 0;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+          section#main .wr .box .menu ul li {
+            visibility: hidden; }
+            section#main .wr .box .menu ul li a {
+              color: white;
+              -webkit-transition: 1s;
+              -o-transition: 1s;
+              transition: 1s; }
+              section#main .wr .box .menu ul li a::after {
+                height: 2px;
+                display: block;
+                width: 0%;
+                margin: auto; }
+              section#main .wr .box .menu ul li a:hover::after {
+                content: "";
+                background-color: #52BE7F;
+                -webkit-transition: 1s;
+                -o-transition: 1s;
+                transition: 1s;
+                width: 100%; }
+    section#main .wr .row {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -664,27 +687,37 @@ section#main {
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
               flex-direction: column;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+          -ms-flex-align: start;
+              align-items: flex-start;
       -webkit-justify-content: space-around;
           -ms-flex-pack: distribute;
               justify-content: space-around;
-      margin-top: 20%;
-      margin-bottom: auto; }
-      section#main .wr .row #logo, section#main section#footer .row .row #logo, section#footer section#main .row .row #logo, section#main section#footer .rowserv .row #logo, section#footer section#main .rowserv .row #logo, section#main .wr .rowserv #logo, section#main section#footer .row .rowserv #logo, section#footer section#main .row .rowserv #logo, section#main section#footer .rowserv .rowserv #logo, section#footer section#main .rowserv .rowserv #logo {
-        width: 200px; }
-      section#main .wr .row h2, section#main section#footer .row .row h2, section#footer section#main .row .row h2, section#main section#footer .rowserv .row h2, section#footer section#main .rowserv .row h2, section#main .wr .rowserv h2, section#main section#footer .row .rowserv h2, section#footer section#main .row .rowserv h2, section#main section#footer .rowserv .rowserv h2, section#footer section#main .rowserv .rowserv h2, section#main .wr .row h3, section#main section#footer .row .row h3, section#footer section#main .row .row h3, section#main section#footer .rowserv .row h3, section#footer section#main .rowserv .row h3, section#main .wr .rowserv h3, section#main section#footer .row .rowserv h3, section#footer section#main .row .rowserv h3, section#main section#footer .rowserv .rowserv h3, section#footer section#main .rowserv .rowserv h3, section#main .wr .row ul li, ul section#main .wr .row li, section#main section#footer .row .row ul li, ul section#main section#footer .row .row li, section#footer section#main .row .row ul li, ul section#footer section#main .row .row li, section#main section#footer .rowserv .row ul li, ul section#main section#footer .rowserv .row li, section#footer section#main .rowserv .row ul li, ul section#footer section#main .rowserv .row li, section#main .wr .rowserv ul li, ul section#main .wr .rowserv li, section#main section#footer .row .rowserv ul li, ul section#main section#footer .row .rowserv li, section#footer section#main .row .rowserv ul li, ul section#footer section#main .row .rowserv li, section#main section#footer .rowserv .rowserv ul li, ul section#main section#footer .rowserv .rowserv li, section#footer section#main .rowserv .rowserv ul li, ul section#footer section#main .rowserv .rowserv li, section#main .wr .row h4, section#main section#footer .row .row h4, section#footer section#main .row .row h4, section#main section#footer .rowserv .row h4, section#footer section#main .rowserv .row h4, section#main .wr .rowserv h4, section#main section#footer .row .rowserv h4, section#footer section#main .row .rowserv h4, section#main section#footer .rowserv .rowserv h4, section#footer section#main .rowserv .rowserv h4 {
-        color: #D92525;
+      margin-bottom: auto;
+      width: auto;
+      margin-top: auto;
+      margin-bottom: 10%;
+      -webkit-align-self: flex-start;
+          -ms-flex-item-align: start;
+              align-self: flex-start;
+      padding: 10px; }
+      section#main .wr .row h2, section#main .wr .row h3, section#main .wr .row ul li, ul section#main .wr .row li {
+        color: #52BE7F;
         margin: 0;
-        margin-top: 1em; }
+        margin-top: 1em;
+        text-align: left;
+        font-size: 25px; }
+      section#main .wr .row h2 span, section#main .wr .row h3 span, section#main .wr .row ul li span, ul section#main .wr .row li span {
+        color: white;
+        font-size: 20px; }
 
 .fade {
   position: absolute; }
 
 section#about {
-  margin-top: -2%;
+  margin-top: 2%;
+  padding: 0;
   background: none;
   background-color: white;
   -webkit-justify-content: space-around;
@@ -702,16 +735,70 @@ section#about {
   -webkit-transition: ease 4s;
   -o-transition: ease 4s;
   transition: ease 4s; }
-  section#about .wr, section#about section#footer .row, section#footer section#about .row, section#about section#footer .rowserv, section#footer section#about .rowserv {
+  section#about .wr {
     margin: 0; }
-    section#about .wr .rowtext p, section#about section#footer .row .rowtext p, section#footer section#about .row .rowtext p, section#about section#footer .rowserv .rowtext p, section#footer section#about .rowserv .rowtext p, section#about .wr .rowtext a, section#about section#footer .row .rowtext a, section#footer section#about .row .rowtext a, section#about section#footer .rowserv .rowtext a, section#footer section#about .rowserv .rowtext a, section#about .wr .rowtext form input, form section#about .wr .rowtext input, section#about section#footer .row .rowtext form input, form section#about section#footer .row .rowtext input, section#footer section#about .row .rowtext form input, form section#footer section#about .row .rowtext input, section#about section#footer .rowserv .rowtext form input, form section#about section#footer .rowserv .rowtext input, section#footer section#about .rowserv .rowtext form input, form section#footer section#about .rowserv .rowtext input, section#about .wr .rowtext form textarea, form section#about .wr .rowtext textarea, section#about section#footer .row .rowtext form textarea, form section#about section#footer .row .rowtext textarea, section#footer section#about .row .rowtext form textarea, form section#footer section#about .row .rowtext textarea, section#about section#footer .rowserv .rowtext form textarea, form section#about section#footer .rowserv .rowtext textarea, section#footer section#about .rowserv .rowtext form textarea, form section#footer section#about .rowserv .rowtext textarea {
-      margin: 20px; }
+    section#about .wr #arrow {
+      width: 14px;
+      margin-top: -7%;
+      -webkit-animation: scale 2s ease infinite;
+              animation: scale 2s ease infinite;
+      cursor: pointer; }
+
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    fill: #BFBFBF; }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    fill: #BFBFBF; }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+    section#about .wr .rowtext {
+      margin-top: 70px;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-bottom: 0; }
+      section#about .wr .rowtext #we p, section#about .wr .rowtext #we a, section#about .wr .rowtext #we form input, form section#about .wr .rowtext #we input, section#about .wr .rowtext #we form textarea, form section#about .wr .rowtext #we textarea {
+        margin: 0;
+        font-size: 16px;
+        font-family: Ubuntu-Light;
+        margin: 5px;
+        margin-top: 20px; }
   section#about #team {
     -webkit-transition: 0, 5s;
     -o-transition: 0, 5s;
     transition: 0, 5s;
-    display: none; }
-    section#about #team .row, section#about #team .rowserv {
+    display: none;
+    margin-top: 0;
+    -webkit-transition: ease;
+    -o-transition: ease;
+    transition: ease; }
+    section#about #team .row {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
@@ -721,7 +808,7 @@ section#about {
       -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center; }
-      section#about #team .row ul, section#about #team .rowserv ul {
+      section#about #team .row ul {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -734,22 +821,24 @@ section#about {
         -webkit-flex-wrap: wrap;
             -ms-flex-wrap: wrap;
                 flex-wrap: wrap;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -webkit-box-align: end;
+        -webkit-align-items: flex-end;
+            -ms-flex-align: end;
+                align-items: flex-end;
         -webkit-box-pack: center;
         -webkit-justify-content: center;
             -ms-flex-pack: center;
                 justify-content: center;
         margin: 0; }
-        section#about #team .row ul li, section#about #team .rowserv ul li {
+        section#about #team .row ul li {
           max-width: 200px; }
+          section#about #team .row ul li h4 {
+            color: black; }
 
 .team {
-  width: 150px;
-  height: 150px;
-  margin: 30px;
+  width: 100px;
+  height: 100px;
+  margin: 8px;
   margin-bottom: 5px;
   -webkit-border-radius: 50%;
           border-radius: 50%;
@@ -765,161 +854,243 @@ section#about {
     -webkit-transform: scale3d(1.1, 1.1, 1);
             transform: scale3d(1.1, 1.1, 1); }
 
-section#cargoowner .desc, section#cargoowner h3.problems, section#cargoowner ul li.problems, ul section#cargoowner li.problems {
-  margin-bottom: 20px; }
-
-section#storage {
-  padding-bottom: 9%; }
-
-#lory, #links, #cloud, #calendarIco {
-  width: 80%;
-  max-width: 300px;
-  margin: 50px; }
-
-#calendarIco {
-  margin: 30px; }
-
-section#inefficients, section#office, section#calendar {
-  background-color: white;
-  -webkit-box-shadow: 3px 0px 20px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: 3px 0px 20px 0px rgba(0, 0, 0, 0.3);
-  padding-bottom: 5%; }
-  section#inefficients .wr, section#office .wr, section#calendar .wr, section#inefficients section#footer .row, section#footer section#inefficients .row, section#office section#footer .row, section#footer section#office .row, section#calendar section#footer .row, section#footer section#calendar .row, section#inefficients section#footer .rowserv, section#footer section#inefficients .rowserv, section#office section#footer .rowserv, section#footer section#office .rowserv, section#calendar section#footer .rowserv, section#footer section#calendar .rowserv {
-    margin: 10px; }
-    section#inefficients .wr h2, section#office .wr h2, section#calendar .wr h2, section#inefficients section#footer .row h2, section#footer section#inefficients .row h2, section#office section#footer .row h2, section#footer section#office .row h2, section#calendar section#footer .row h2, section#footer section#calendar .row h2, section#inefficients section#footer .rowserv h2, section#footer section#inefficients .rowserv h2, section#office section#footer .rowserv h2, section#footer section#office .rowserv h2, section#calendar section#footer .rowserv h2, section#footer section#calendar .rowserv h2, section#inefficients .wr h3, section#office .wr h3, section#calendar .wr h3, section#inefficients section#footer .row h3, section#footer section#inefficients .row h3, section#office section#footer .row h3, section#footer section#office .row h3, section#calendar section#footer .row h3, section#footer section#calendar .row h3, section#inefficients section#footer .rowserv h3, section#footer section#inefficients .rowserv h3, section#office section#footer .rowserv h3, section#footer section#office .rowserv h3, section#calendar section#footer .rowserv h3, section#footer section#calendar .rowserv h3, section#inefficients .wr ul li, ul section#inefficients .wr li, section#office .wr ul li, ul section#office .wr li, section#calendar .wr ul li, ul section#calendar .wr li, section#inefficients section#footer .row ul li, ul section#inefficients section#footer .row li, section#footer section#inefficients .row ul li, ul section#footer section#inefficients .row li, section#office section#footer .row ul li, ul section#office section#footer .row li, section#footer section#office .row ul li, ul section#footer section#office .row li, section#calendar section#footer .row ul li, ul section#calendar section#footer .row li, section#footer section#calendar .row ul li, ul section#footer section#calendar .row li, section#inefficients section#footer .rowserv ul li, ul section#inefficients section#footer .rowserv li, section#footer section#inefficients .rowserv ul li, ul section#footer section#inefficients .rowserv li, section#office section#footer .rowserv ul li, ul section#office section#footer .rowserv li, section#footer section#office .rowserv ul li, ul section#footer section#office .rowserv li, section#calendar section#footer .rowserv ul li, ul section#calendar section#footer .rowserv li, section#footer section#calendar .rowserv ul li, ul section#footer section#calendar .rowserv li, section#inefficients .wr h4, section#office .wr h4, section#calendar .wr h4, section#inefficients section#footer .row h4, section#footer section#inefficients .row h4, section#office section#footer .row h4, section#footer section#office .row h4, section#calendar section#footer .row h4, section#footer section#calendar .row h4, section#inefficients section#footer .rowserv h4, section#footer section#inefficients .rowserv h4, section#office section#footer .rowserv h4, section#footer section#office .rowserv h4, section#calendar section#footer .rowserv h4, section#footer section#calendar .rowserv h4 {
-      margin-top: -30px;
-      margin-bottom: 30px; }
-    section#inefficients .wr p, section#office .wr p, section#calendar .wr p, section#inefficients section#footer .row p, section#footer section#inefficients .row p, section#office section#footer .row p, section#footer section#office .row p, section#calendar section#footer .row p, section#footer section#calendar .row p, section#inefficients section#footer .rowserv p, section#footer section#inefficients .rowserv p, section#office section#footer .rowserv p, section#footer section#office .rowserv p, section#calendar section#footer .rowserv p, section#footer section#calendar .rowserv p, section#inefficients .wr a, section#office .wr a, section#calendar .wr a, section#inefficients section#footer .row a, section#footer section#inefficients .row a, section#office section#footer .row a, section#footer section#office .row a, section#calendar section#footer .row a, section#footer section#calendar .row a, section#inefficients section#footer .rowserv a, section#footer section#inefficients .rowserv a, section#office section#footer .rowserv a, section#footer section#office .rowserv a, section#calendar section#footer .rowserv a, section#footer section#calendar .rowserv a, section#inefficients .wr form input, form section#inefficients .wr input, section#office .wr form input, form section#office .wr input, section#calendar .wr form input, form section#calendar .wr input, section#inefficients section#footer .row form input, form section#inefficients section#footer .row input, section#footer section#inefficients .row form input, form section#footer section#inefficients .row input, section#office section#footer .row form input, form section#office section#footer .row input, section#footer section#office .row form input, form section#footer section#office .row input, section#calendar section#footer .row form input, form section#calendar section#footer .row input, section#footer section#calendar .row form input, form section#footer section#calendar .row input, section#inefficients section#footer .rowserv form input, form section#inefficients section#footer .rowserv input, section#footer section#inefficients .rowserv form input, form section#footer section#inefficients .rowserv input, section#office section#footer .rowserv form input, form section#office section#footer .rowserv input, section#footer section#office .rowserv form input, form section#footer section#office .rowserv input, section#calendar section#footer .rowserv form input, form section#calendar section#footer .rowserv input, section#footer section#calendar .rowserv form input, form section#footer section#calendar .rowserv input, section#inefficients .wr form textarea, form section#inefficients .wr textarea, section#office .wr form textarea, form section#office .wr textarea, section#calendar .wr form textarea, form section#calendar .wr textarea, section#inefficients section#footer .row form textarea, form section#inefficients section#footer .row textarea, section#footer section#inefficients .row form textarea, form section#footer section#inefficients .row textarea, section#office section#footer .row form textarea, form section#office section#footer .row textarea, section#footer section#office .row form textarea, form section#footer section#office .row textarea, section#calendar section#footer .row form textarea, form section#calendar section#footer .row textarea, section#footer section#calendar .row form textarea, form section#footer section#calendar .row textarea, section#inefficients section#footer .rowserv form textarea, form section#inefficients section#footer .rowserv textarea, section#footer section#inefficients .rowserv form textarea, form section#footer section#inefficients .rowserv textarea, section#office section#footer .rowserv form textarea, form section#office section#footer .rowserv textarea, section#footer section#office .rowserv form textarea, form section#footer section#office .rowserv textarea, section#calendar section#footer .rowserv form textarea, form section#calendar section#footer .rowserv textarea, section#footer section#calendar .rowserv form textarea, form section#footer section#calendar .rowserv textarea {
-      max-width: 750px; }
-  section#inefficients #capacity, section#office #capacity, section#calendar #capacity {
-    font-size: 24px;
-    text-transform: none; }
-
-section#office {
-  background-color: #f8f8f8; }
-  section#office .wr .row, section#office section#footer .row .row, section#footer section#office .row .row, section#office section#footer .rowserv .row, section#footer section#office .rowserv .row, section#office .wr .rowserv, section#office section#footer .row .rowserv, section#footer section#office .row .rowserv, section#office section#footer .rowserv .rowserv, section#footer section#office .rowserv .rowserv {
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around; }
-
-section#calendar {
-  background-color: white; }
-
-section#contacts {
-  -webkit-box-shadow: 3px 0px 20px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: 3px 0px 20px 0px rgba(0, 0, 0, 0.3); }
-  section#contacts .wr .rowtext, section#contacts section#footer .row .rowtext, section#footer section#contacts .row .rowtext, section#contacts section#footer .rowserv .rowtext, section#footer section#contacts .rowserv .rowtext {
+section#problems {
+  -webkit-clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%);
+          clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%);
+  padding-bottom: 52;
+  padding-top: 2%; }
+  section#problems .wr h2, section#problems .wr h3, section#problems .wr ul li, ul section#problems .wr li {
+    margin-top: 10%;
+    -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+            align-self: flex-start;
+    color: black;
+    padding-bottom: 50px; }
+  section#problems .wr h4 {
+    color: #C23934;
     margin: 0; }
-    section#contacts .wr .rowtext h2, section#contacts section#footer .row .rowtext h2, section#footer section#contacts .row .rowtext h2, section#contacts section#footer .rowserv .rowtext h2, section#footer section#contacts .rowserv .rowtext h2, section#contacts .wr .rowtext h3, section#contacts section#footer .row .rowtext h3, section#footer section#contacts .row .rowtext h3, section#contacts section#footer .rowserv .rowtext h3, section#footer section#contacts .rowserv .rowtext h3, section#contacts .wr .rowtext ul li, ul section#contacts .wr .rowtext li, section#contacts section#footer .row .rowtext ul li, ul section#contacts section#footer .row .rowtext li, section#footer section#contacts .row .rowtext ul li, ul section#footer section#contacts .row .rowtext li, section#contacts section#footer .rowserv .rowtext ul li, ul section#contacts section#footer .rowserv .rowtext li, section#footer section#contacts .rowserv .rowtext ul li, ul section#footer section#contacts .rowserv .rowtext li, section#contacts .wr .rowtext h4, section#contacts section#footer .row .rowtext h4, section#footer section#contacts .row .rowtext h4, section#contacts section#footer .rowserv .rowtext h4, section#footer section#contacts .rowserv .rowtext h4 {
-      margin-top: -20px; }
-  section#contacts .wr .btn, section#contacts section#footer .row .btn, section#footer section#contacts .row .btn, section#contacts section#footer .rowserv .btn, section#footer section#contacts .rowserv .btn, section#contacts .wr form button, form section#contacts .wr button, section#contacts section#footer .row form button, form section#contacts section#footer .row button, section#footer section#contacts .row form button, form section#footer section#contacts .row button, section#contacts section#footer .rowserv form button, form section#contacts section#footer .rowserv button, section#footer section#contacts .rowserv form button, form section#footer section#contacts .rowserv button {
-    margin-top: 30px;
-    margin-bottom: 10px; }
-
-section#footer {
-  background: none;
-  padding: 0; }
-  section#footer .row, section#footer .rowserv {
-    mix-width: 80px;
-    padding: 20px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-    section#footer .row .item, section#footer .rowserv .item {
-      margin: auto;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center; }
-      section#footer .row .item .img, section#footer .rowserv .item .img {
-        width: 30px;
-        height: 30px;
-        margin: 5px;
-        background-position: center; }
-
-.headhesive {
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
-  height: 30px;
-  width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-self: flex-start;
-      -ms-flex-item-align: start;
-          align-self: flex-start;
-  margin: auto;
-  position: fixed;
-  z-index: 2;
-  -webkit-transform: translateY(-50px);
-      -ms-transform: translateY(-50px);
-          transform: translateY(-50px);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
-  .headhesive ul {
-    -webkit-transform: translateY(-50px);
-        -ms-transform: translateY(-50px);
-            transform: translateY(-50px);
-    margin: 0;
-    -webkit-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
+  section#problems .desc {
+    margin-bottom: 20px; }
+  section#problems .carousel {
+    width: 100%; }
+    section#problems .carousel .flickity-viewport {
+      height: auto; }
+    section#problems .carousel .carousel-cell {
+      width: 100%; }
+      section#problems .carousel .carousel-cell .row {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin: 0;
+        padding-bottom: 10px; }
+        section#problems .carousel .carousel-cell .row img {
+          padding: 20px;
+          max-width: 550px;
+          max-height: 300px; }
+        section#problems .carousel .carousel-cell .row div {
+          text-align: left; }
+          section#problems .carousel .carousel-cell .row div h3, section#problems .carousel .carousel-cell .row div ul li, ul section#problems .carousel .carousel-cell .row div li {
+            margin-top: 0;
+            padding: 0; }
+  section#problems .row {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    background-color: #BFBFBF;
-    font-size: 12px; }
-    .headhesive ul a:hover {
-      color: #D92525;
-      -webkit-transition: 500ms;
-      -o-transition: 500ms;
-      transition: 500ms; }
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 0;
+    margin-bottom: 10%;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    section#problems .row #cover {
+      background-color: #a4a4a4;
+      width: 90%;
+      height: 2px; }
+      section#problems .row #cover .progress-bar {
+        width: 0;
+        -webkit-align-self: flex-start;
+            -ms-flex-item-align: start;
+                align-self: flex-start;
+        background-color: #373737;
+        height: 2px; }
+    section#problems .row .box {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      width: 50px;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      background: none;
+      margin: 10px;
+      margin-right: 0px; }
+      section#problems .row .box .button-previous {
+        cursor: pointer;
+        width: 14px;
+        height: 14px;
+        background: url(../img/svg/arrow-previous.svg);
+        background-position: cover; }
+      section#problems .row .box .button-next {
+        cursor: pointer;
+        width: 14px;
+        height: 14px;
+        background: url(../img/svg/arrow-next.svg); }
 
-.headhesive--stick {
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
-  -webkit-transform: translateY(0px);
-      -ms-transform: translateY(0px);
-          transform: translateY(0px); }
-  .headhesive--stick ul {
-    -webkit-transform: translateY(0px);
-        -ms-transform: translateY(0px);
-            transform: translateY(0px);
-    padding: 10px 30px;
-    -webkit-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
-    -webkit-border-radius: 0px 0px 20px 20px;
-            border-radius: 0px 0px 20px 20px; }
+section#solutions {
+  background: none; }
+  section#solutions .wr .row1 {
+    margin: 0;
+    padding-bottom: 50px; }
+    section#solutions .wr .row1 h2, section#solutions .wr .row1 h3, section#solutions .wr .row1 ul li, ul section#solutions .wr .row1 li {
+      -webkit-align-self: flex-start;
+          -ms-flex-item-align: start;
+              align-self: flex-start;
+      color: black; }
+  section#solutions .wr .row2 {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    section#solutions .wr .row2 .track {
+      padding: 10px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      section#solutions .wr .row2 .track .text ul {
+        margin: 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        section#solutions .wr .row2 .track .text ul li {
+          color: black;
+          cursor: pointer;
+          font-size: 12px;
+          padding: 4px 0;
+          opacity: 0.5; }
+          section#solutions .wr .row2 .track .text ul li:active {
+            color: #BFBFBF; }
+    section#solutions .wr .row2 .progressBar2 #cover2 {
+      height: 300px;
+      width: 2px;
+      background-color: #BFBFBF; }
+    section#solutions .wr .row2 .progressBar2 .progress-bar {
+      width: 2px;
+      background-color: black; }
+    section#solutions .wr .row2 #area {
+      display: block;
+      width: 85%;
+      overflow: hidden;
+      height: 320px; }
+      section#solutions .wr .row2 #area .box {
+        width: 100%;
+        padding-right: 0px; }
+        section#solutions .wr .row2 #area .box .row {
+          margin: 0;
+          padding: 10px 0px;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-justify-content: space-around;
+              -ms-flex-pack: distribute;
+                  justify-content: space-around;
+          text-align: left;
+          height: inherit; }
+          section#solutions .wr .row2 #area .box .row img {
+            padding: 20px;
+            max-width: 450px; }
+      section#solutions .wr .row2 #area::-webkit-scrollbar {
+        width: 5px;
+        padding-right: 10px; }
+
+section#contacts {
+  -webkit-clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0% 100%);
+  padding: 0; }
+  section#contacts #map {
+    width: 100%;
+    height: 450px; }
+  section#contacts .wr .btn, section#contacts .wr form button, form section#contacts .wr button {
+    margin: 10px;
+    margin-top: 20px; }
+  section#contacts .wr .row {
+    margin: 0;
+    padding: 20px;
+    padding: 10px; }
+    section#contacts .wr .row ul {
+      width: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin: 10px;
+      margin-top: 0; }
+      section#contacts .wr .row ul li {
+        margin: 0;
+        padding: 20px;
+        min-width: 100px; }
+        section#contacts .wr .row ul li img {
+          height: 28px; }
+        section#contacts .wr .row ul li p, section#contacts .wr .row ul li a, section#contacts .wr .row ul li form input, form section#contacts .wr .row ul li input, section#contacts .wr .row ul li form textarea, form section#contacts .wr .row ul li textarea {
+          font-size: 14px;
+          color: #BFBFBF;
+          text-align: left; }
+          section#contacts .wr .row ul li p:first-child, section#contacts .wr .row ul li a:first-child, section#contacts .wr .row ul li form input:first-child, form section#contacts .wr .row ul li input:first-child, section#contacts .wr .row ul li form textarea:first-child, form section#contacts .wr .row ul li textarea:first-child {
+            color: black;
+            margin-bottom: 10px; }
 
 .remodal-overlay {
   z-index: 6; }
@@ -927,58 +1098,10 @@ section#footer {
 .remodal-wrapper {
   z-index: 7; }
 
-#remodal-form {
-  padding-bottom: 15px;
-  -webkit-border-radius: 18px;
-          border-radius: 18px; }
-
-.clc-3 {
-  fill: #de4444;
-  stroke: #de4444;
-  -webkit-animation: scale 1s ease infinite alternate-reverse;
-          animation: scale 1s ease infinite alternate-reverse; }
-
-@-webkit-keyframes scale {
-  0% {
-    stroke-width: 0px; }
-  100% {
-    stroke-width: 15px; } }
-
-@keyframes scale {
-  0% {
-    stroke-width: 0px; }
-  100% {
-    stroke-width: 15px; } }
-
-.cll-2 {
-  -webkit-animation: highlight infinite;
-          animation: highlight infinite;
-  -webkit-animation-duration: 40s;
-          animation-duration: 40s; }
-
-@-webkit-keyframes highlight {
-  0% {
-    stroke: #de4545;
-    stroke-width: 0px; }
-  100% {
-    stroke-width: 7px;
-    stroke: rgba(222, 69, 69, 0); } }
-
-@keyframes highlight {
-  0% {
-    stroke: #de4545;
-    stroke-width: 0px; }
-  100% {
-    stroke-width: 7px;
-    stroke: rgba(222, 69, 69, 0); } }
-
 @media only screen and (max-width: 800px) {
   .menu {
     display: none; }
-  img {
-    width: 100%;
-    margin-bottom: 30px; }
-  .rowserv {
+  .row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -988,94 +1111,107 @@ section#footer {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
-  .row, .rowserv {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center; }
-  .featuresRight, .featuresLeft {
-    text-align: center;
-    margin: 0px;
-    padding: 0; }
-  .featuresLeft {
-    margin: 0px;
-    padding: 0;
-    text-align: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    -webkit-flex-direction: column-reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse; }
-  section .wr .row, section#footer .row .row, section#footer .rowserv .row, section .wr .rowserv, section#footer .row .rowserv, section#footer .rowserv .rowserv {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-  section#main {
-    height: 101vh; }
-  section#forwarder .row, section#forwarder .rowserv {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    -webkit-flex-direction: column-reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse; }
-  section#driver .row, section#driver .rowserv {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    -webkit-flex-direction: column-reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse; }
-  img.team {
-    width: 100px;
-    height: 100px;
-    margin: 15px; }
-  quote {
-    font-size: 15px;
-    margin-top: -3%; }
-  h2, h3, ul li, h4 {
+  section .wr {
+    padding: 0px 20px; }
+    section .wr .row {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+  h2, h3, ul li {
     font-size: 20px; }
+  h3, ul li {
+    font-size: 16px; }
   h4 {
-    font-size: 15px; } }
-
-@media only screen and (max-width: 500px) {
-  #lory, #links, #cloud, #calendarIco {
-    margin: 20px 10px; }
-  .wr, section#footer .row, section#footer .rowserv {
-    padding: 0px 10px; }
-  #calendarIco {
-    margin: 30px; }
+    font-size: 15px; }
+  img {
+    max-width: 450px; }
   section#main {
-    height: 98vh; }
-  section#inefficients .wr h2, section#office .wr h2, section#calendar .wr h2, section#inefficients section#footer .row h2, section#footer section#inefficients .row h2, section#office section#footer .row h2, section#footer section#office .row h2, section#calendar section#footer .row h2, section#footer section#calendar .row h2, section#inefficients section#footer .rowserv h2, section#footer section#inefficients .rowserv h2, section#office section#footer .rowserv h2, section#footer section#office .rowserv h2, section#calendar section#footer .rowserv h2, section#footer section#calendar .rowserv h2, section#inefficients .wr h3, section#office .wr h3, section#calendar .wr h3, section#inefficients section#footer .row h3, section#footer section#inefficients .row h3, section#office section#footer .row h3, section#footer section#office .row h3, section#calendar section#footer .row h3, section#footer section#calendar .row h3, section#inefficients section#footer .rowserv h3, section#footer section#inefficients .rowserv h3, section#office section#footer .rowserv h3, section#footer section#office .rowserv h3, section#calendar section#footer .rowserv h3, section#footer section#calendar .rowserv h3, section#inefficients .wr ul li, ul section#inefficients .wr li, section#office .wr ul li, ul section#office .wr li, section#calendar .wr ul li, ul section#calendar .wr li, section#inefficients section#footer .row ul li, ul section#inefficients section#footer .row li, section#footer section#inefficients .row ul li, ul section#footer section#inefficients .row li, section#office section#footer .row ul li, ul section#office section#footer .row li, section#footer section#office .row ul li, ul section#footer section#office .row li, section#calendar section#footer .row ul li, ul section#calendar section#footer .row li, section#footer section#calendar .row ul li, ul section#footer section#calendar .row li, section#inefficients section#footer .rowserv ul li, ul section#inefficients section#footer .rowserv li, section#footer section#inefficients .rowserv ul li, ul section#footer section#inefficients .rowserv li, section#office section#footer .rowserv ul li, ul section#office section#footer .rowserv li, section#footer section#office .rowserv ul li, ul section#footer section#office .rowserv li, section#calendar section#footer .rowserv ul li, ul section#calendar section#footer .rowserv li, section#footer section#calendar .rowserv ul li, ul section#footer section#calendar .rowserv li, section#inefficients .wr h4, section#office .wr h4, section#calendar .wr h4, section#inefficients section#footer .row h4, section#footer section#inefficients .row h4, section#office section#footer .row h4, section#footer section#office .row h4, section#calendar section#footer .row h4, section#footer section#calendar .row h4, section#inefficients section#footer .rowserv h4, section#footer section#inefficients .rowserv h4, section#office section#footer .rowserv h4, section#footer section#office .rowserv h4, section#calendar section#footer .rowserv h4, section#footer section#calendar .rowserv h4 {
-    padding: 15px; }
-  section#footer iframe {
-    height: 150px; }
-  section#footer .row, section#footer .rowserv {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-    section#footer .row .item, section#footer .rowserv .item {
-      margin: 5px; }
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 92%, 0% 100%);
+            clip-path: polygon(0% 0%, 100% 0%, 100% 92%, 0% 100%); }
+    section#main .wr .box {
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    section#main .wr .row {
+      margin-top: 0; }
+      section#main .wr .row h2, section#main .wr .row h3, section#main .wr .row ul li, ul section#main .wr .row li {
+        text-align: center;
+        -webkit-align-self: center;
+            -ms-flex-item-align: center;
+                align-self: center; }
+      section#main .wr .row span {
+        text-align: center; }
+  section#problems {
+    -webkit-clip-path: polygon(0% 8%, 100% 0%, 100% 92%, 0% 100%);
+            clip-path: polygon(0% 8%, 100% 0%, 100% 92%, 0% 100%); }
+    section#problems .wr {
+      padding: 8% 0px; }
+      section#problems .wr h2, section#problems .wr h3, section#problems .wr ul li, ul section#problems .wr li {
+        -webkit-align-self: center;
+            -ms-flex-item-align: center;
+                align-self: center;
+        padding-bottom: 20px;
+        margin: 0;
+        margin-top: 20px; }
+      section#problems .wr .carousel .carousel-cell .row {
+        -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding: 20px;
+        padding-bottom: 0; }
+        section#problems .wr .carousel .carousel-cell .row img {
+          width: 90%; }
+        section#problems .wr .carousel .carousel-cell .row h3, section#problems .wr .carousel .carousel-cell .row ul li, ul section#problems .wr .carousel .carousel-cell .row li {
+          text-align: center;
+          padding: 10px; }
+      section#problems .wr #buttons {
+        display: none; }
+  section#solutions {
+    padding-bottom: 0; }
+    section#solutions .wr .row1 h2, section#solutions .wr .row1 h3, section#solutions .wr .row1 ul li, ul section#solutions .wr .row1 li {
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center;
+      padding-bottom: 20px;
+      margin: 0; }
+    section#solutions .wr .row2 .track {
+      display: none; }
+    section#solutions .wr .row2 #area {
+      height: auto;
+      width: 100%; }
+      section#solutions .wr .row2 #area #child {
+        overflow: scroll;
+        height: auto; }
+        section#solutions .wr .row2 #area #child .row {
+          padding: 0;
+          margin-bottom: 30px;
+          margin-top: 30px; }
+          section#solutions .wr .row2 #area #child .row img {
+            width: inherit; }
+          section#solutions .wr .row2 #area #child .row h3, section#solutions .wr .row2 #area #child .row ul li, ul section#solutions .wr .row2 #area #child .row li {
+            text-align: center;
+            padding: 15px; }
   section#contacts {
-    -webkit-box-shadow: 3px 0px 20px 0px rgba(0, 0, 0, 0.3);
-            box-shadow: 3px 0px 20px 0px rgba(0, 0, 0, 0.3); }
-    section#contacts .wr .rowtext h2, section#contacts section#footer .row .rowtext h2, section#footer section#contacts .row .rowtext h2, section#contacts section#footer .rowserv .rowtext h2, section#footer section#contacts .rowserv .rowtext h2, section#contacts .wr .rowtext h3, section#contacts section#footer .row .rowtext h3, section#footer section#contacts .row .rowtext h3, section#contacts section#footer .rowserv .rowtext h3, section#footer section#contacts .rowserv .rowtext h3, section#contacts .wr .rowtext ul li, ul section#contacts .wr .rowtext li, section#contacts section#footer .row .rowtext ul li, ul section#contacts section#footer .row .rowtext li, section#footer section#contacts .row .rowtext ul li, ul section#footer section#contacts .row .rowtext li, section#contacts section#footer .rowserv .rowtext ul li, ul section#contacts section#footer .rowserv .rowtext li, section#footer section#contacts .rowserv .rowtext ul li, ul section#footer section#contacts .rowserv .rowtext li, section#contacts .wr .rowtext h4, section#contacts section#footer .row .rowtext h4, section#footer section#contacts .row .rowtext h4, section#contacts section#footer .rowserv .rowtext h4, section#footer section#contacts .rowserv .rowtext h4 {
-      margin-top: -10px; }
-  li {
-    margin: 0px; } }
+    -webkit-clip-path: polygon(0% 8%, 100% 0%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 8%, 100% 0%, 100% 100%, 0% 100%); }
+    section#contacts #map {
+      height: 260px; }
+    section#contacts .wr .row ul {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -webkit-flex-direction: column-reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse; }
+      section#contacts .wr .row ul li p, section#contacts .wr .row ul li a, section#contacts .wr .row ul li form input, form section#contacts .wr .row ul li input, section#contacts .wr .row ul li form textarea, form section#contacts .wr .row ul li textarea {
+        text-align: center; } }

@@ -8,67 +8,71 @@
     <link rel="stylesheet" href="css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="" type="image/png">
-
-
 </head>
 
 <body>
     <nav>
         <ul class="cd-primary-nav">
-            <li><a class="click-menu" href="#main">Main</a></li>
             <li><a class="click-menu" href="#about">About us</a></li>
-            <li><a class="click-menu" href="#we">Team</a></li>
-            <li><a class="click-menu" href="#cargoowner">Services</a></li>
-            <li><a class="click-menu" href="#contacts">Contacts</a></li>
+            <li><a class="click-menu" href="#problems">Problem</a></li>
+            <li><a class="click-menu" href="#solutions">Solution</a></li>
+            <li><a class="click-menu" href="#contacts">Conatcts</a></li>
         </ul>
     </nav>
 
     <section id="main">
-<!--        <button id="play" class="btn">PLay</button>-->
-            <div id="back"></div>
-            <video preload="preload" id="video" autoplay loop="loop">
+        <div id="back"></div>
+        <video preload="preload" id="video" autoplay loop="loop">
                 <source src="bg.mp4" type="video/mp4">
             </video>
-        
+
         <div class="wr">
-            <div class="menu">
-                <ul>
-                    <li>
-                        <a href="#main">Main</a>
-                    </li>
-                    <li>
-                        <a href="#about">About us</a>
-                    </li>
-                    <li>
-                        <a href="#we">Team</a>
-                    </li>
-                    <li>
-                        <a href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a href="#contacts">Contacts</a>
-                    </li>
-                </ul>
+            <div class="box">
+                <img src="img/svg/logo-name.svg" class="wow fadeInDown" id="logo" alt="">
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="#about">About us</a>
+                        </li>
+                        <li>
+                            <a href="#problems">Problem</a>
+                        </li>
+                        <li>
+                            <a href="#solutions">Solution</a>
+                        </li>
+                        <li>
+                            <a href="#contacts">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="row">
-<!--                <img  class="wow fadeIn" data-wow-delay="0.8s" src="" id="logo" alt="">-->
-               <p>Logo</p>
-                <h2 class="wow fadeInUp" data-wow-delay="1.2s" >Expedition reinvented</h2>
+                <h2 class="wow fadeInUp" data-wow-delay="0.2s">Virtual <br>Freight Transportation <br> Company
+                </h2>
+                <h2 class="wow fadeInUp" data-wow-delay="0.8s"> <span>
+                    WE USE SCIENCE TO IMPROVE EFFICIENCY IN FREIGHT TRANSPORTATION
+                </span></h2>
             </div>
         </div>
     </section>
 
     <section id="about">
         <div class="wr">
-            <quote>WE USE SCIENCE TO IMPROVE EFFICIENCY IN FREIGHT TRANSPORTATION</quote>
+            <svg xmlns="http://www.w3.org/2000/svg" id="arrow" viewBox="3506 772.84 14 14">
+  <path id="arrow-down" d="M10.2,4h1.768V14.606l4.861-4.861L18.08,11l-7,7-7-7L5.335,9.745,10.2,14.606Z" transform="translate(3501.92 768.84)"/>
+</svg>
             <div class="rowtext">
                 <h2>About us</h2>
-                <div class="desc">Lorem ipsum dolor sit amet, consectetur.</div>
+
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus est quibusdam id aperiam? Repudiandae adipisci animi quo aspernatur velit. Natus voluptate doloremque dolore dolores tempora harum, atque maiores asperiores nemo ea, accusantium, quisquam amet, fugit. Animi vel, consectet</p>
-            <span id="we"></span>
+                <span id="we"><p>Team</p></span>
+                <div class="drop-down">
+                    <div id="line1"></div>
+                    <div id="line2"></div>
+                    <div id="line3"></div>
+                </div>
             </div>
             <div class="row" id="team">
-                <div class="desc">Team</div>
                 <div class="row">
                     <ul>
                         <li>
@@ -137,769 +141,285 @@
                         </li>
                     </ul>
                 </div>
-
-            </div>
-
-            <div class="drop-down">
-                <div id="line1"></div>
-                <div id="line2"></div>
-            </div>
-
-
-
-        </div>
-        <span id="services"></span>
-    </section>
-
-    <section id="cargoowner">
-        <h2>Lorem ipsum.</h2>
-        <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, cum.</div>
-        <div class="rowserv">
-            <img class="motion" src="img/cargoowner.png" alt="">
-            <div class="featuresRight">
-                <h3>Cargo owner</h3>
-
-                <h4>Safety shipping</h4>
-                <p>Make initial check at registration of the system, and then continued automatically check based on the company system</p>
-
-                <h4>Shipping cost</h4>
-                <p>arget company - is to reduce inefficiency, under the cost will be less at the same or higher margin contractor</p>
-
-                <h4>SLA</h4>
-                <p>automatic collection of statistics aggregated driver in representing a client. If statistics driver falls below the limit, we cooperate breaks</p>
             </div>
         </div>
     </section>
 
-    <section id="forwarder">
-        <div class="rowserv">
-            <div class="featuresLeft">
-                <h3>forwarder</h3>
-
-                <h4>Search</h4>
-                <p>Search engine is the best candidate from 30c to 2 minutes</p>
-
-                <h4>Office inefficiency</h4>
-                <p>Control the order:</p>
-                <p>- photo report loading / unloading;</p>
-                <p>- check the forwarder Liszt / systems;</p>
-                <p>- notification system;</p>
-
-                <h4>Communication</h4>
-                <p>- a set of communication messages</p>
-                <p>- the possibility of anonymous direct communication <br> between parties to the contract</p>
-            </div>
-            <img class="motion" src="img/forwarder.png" alt="">
-        </div>
-    </section>
-
-    <section id="transportcompany">
-        <div class="rowserv">
-            <img class="motion" src="img/transport%20company.png" alt="">
-            <div class="featuresRight">
-                <h3>TRANSPORT COMPANY</h3>
-
-                <h4>Reduction of empty mileage</h4>
-                <p>Module optimization - optimizing routes so that the average download ring (A-B-C-A) was the maximum for now</p>
-
-                <h4>Underload</h4>
-                <p>Optimization module operate continuously, and knowing the location of the vehicle, the system will inform about the possibility of paging</p>
-
-                <h4>Simple to upload / download</h4>
-                <p>Assist system part loading / unloading in planning and informing the driver of the time and place of loading / unloading</p>
-
-                <h4>Communication</h4>
-                <p>- a set of communication messages</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="driver">
-        <div class="rowserv">
-            <div class="featuresLeft">
-                <h3>DRIVER</h3>
-
-                <h4>Office inefficiency</h4>
-                <p>Control the order:</p>
-                <p>- photo report loading / unloading;</p>
-                <p>- check the forwarder Liszt / systems;</p>
-                <p>- notification system;</p>
-
-                <h4>Communication</h4>
-                <p>- a set of communication messages</p>
-                <p>- the possibility of anonymous direct communication between parties to the contract</p>
-            </div>
-            <img class="motion" src="img/driver.png" alt="">
-        </div>
-    </section>
-
-    <section id="storage">
-        <div class="rowserv">
-            <img class="motion" src="img/storage.png" alt="">
-            <div class="featuresRight">
-                <h3>TRANSPORT COMPANY</h3>
-
-                <h4>Reduction of empty mileage</h4>
-                <p>Module optimization - optimizing routes so that the average download ring (A-B-C-A) was the maximum for now</p>
-
-                <h4>Underload</h4>
-                <p>Optimization module operate continuously, and knowing the location of the vehicle, the system will inform about the possibility of paging</p>
-
-                <h4>Simple to upload / download</h4>
-                <p>Assist system part loading / unloading in planning and informing the driver of the time and place of loading / unloading</p>
-
-                <h4>Communication</h4>
-                <p>- a set of communication messages</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="inefficients">
+    <section id="problems">
         <div class="wr">
-            <h2>Lorem ipsum dolor sit.</h2>
-            <h3 class="problems">Lorem ipsum dolor sit.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta officiis, omnis culpa iure laboriosam maxime minus sequi numquam error optio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quas, unde. Voluptatum nobis eius, tempora laudantium nemo magni perspiciatis quasi! </p>
-            <div id="loryBox" class="wow fadeInLeft" data-wow-duration="1s" data-wow-offset="400">
-                <svg id="lory" xmlns="http://www.w3.org/2000/svg" viewBox="10782.2 6431.2 564.488 201.179">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #8d8a94;
-      }
-        .per{
-            animation: frame 2s ease-in-out 2s infinite;
-        }
-      .cls-2 {
-        fill: #625d6b;
-      }
+            <h2>Problems</h2>
+            <div class="carousel">
+                <div class="carousel-cell">
+                    <div class="row">
+                        <img src="img/svg/cargo.svg" alt="">
+                        <div>
+                            <h3>forwarder</h3>
+                            <h4>Search</h4>
+                            <p>Search engine is the best candidate from 30c to 2 minutes</p>
 
-      .cls-3 {
-        fill: #dcdbde;
-      }
+                            <h4>Office inefficiency</h4>
+                            <p>Control the order:</p>
+                            <p>- photo report loading / unloading;</p>
+                            <p>- check the forwarder Liszt / systems;</p>
+                            <p>- notification system;</p>
 
-      .cls-4 {
-        fill: #55b13d;
-      }
+                            <h4>Communication</h4>
+                            <p>- a set of communication messages</p>
+                            <p>- the possibility of anonymous direct communication <br> between parties to the contract</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="row">
+                        <img src="img/svg/cargo.svg" alt="">
+                        <div>
+                            <h3>forwarder</h3>
+                            <h4>Search</h4>
+                            <p>Search engine is the best candidate from 30c to 2 minutes</p>
 
-      .cls-5 {
-        fill: #ededee;
-      }
+                            <h4>Office inefficiency</h4>
+                            <p>Control the order:</p>
+                            <p>- photo report loading / unloading;</p>
+                            <p>- check the forwarder Liszt / systems;</p>
+                            <p>- notification system;</p>
 
-      .cls-6 {
-        fill: #504b5a;
-      }
+                            <h4>Communication</h4>
+                            <p>- a set of communication messages</p>
+                            <p>- the possibility of anonymous direct communication <br> between parties to the contract</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="row">
+                        <img src="img/svg/lory.svg" alt="">
+                        <div>
+                            <h3>forwarder</h3>
+                            <h4>Search</h4>
+                            <p>Search engine is the best candidate from 30c to 2 minutes</p>
 
-      .cls-7 {
-        fill: #a7a5ac;
-      }
-    </style>
-  </defs>
-  <g id="trucking" transform="translate(11018 6331.889)">
-    <path id="Path_49" data-name="Path 49" class="cls-1" d="M359.7,153.148H348.363V118.173a5.666,5.666,0,0,0-1.66-4.008l-6.01-6.01a2.833,2.833,0,0,1,0-4.007l4.007-4.007a2.833,2.833,0,0,1,4.007,0l6.01,6.01a17,17,0,0,1,4.98,12.025v34.972Z" transform="translate(-121.681)"/>
-    <path id="Path_50" data-name="Path 50" class="cls-2" d="M508.145,306.759H392.917v17H19.8c-6.06,0-10.975,2.538-10.975,5.667v11.334c0,3.13,4.914,5.667,10.975,5.667H508.145Z" transform="translate(-244.627 -74.273)"/>
-    <path id="Path_51" data-name="Path 51" class="cls-3" d="M445.1,139.035H11.714C5.245,139.035,0,141.573,0,144.7V258.043c0,3.13,5.245,5.667,11.714,5.667H445.1c6.469,0,11.714-2.538,11.714-5.667V144.7C456.814,141.571,451.569,139.035,445.1,139.035Z" transform="translate(-235.8 -14.222)"/>
-    
-    <rect id='per'  width="460" fill="#55B13D" rx="10" ry="10" transform="translate(-235.8 190.276) rotate(180 230 30)">
-    </rect>
-    
-    <path id="Path_57" data-name="Path 57" class="cls-1" d="M422.805,165.518H385.253a5.668,5.668,0,0,0-5.667,5.667v85.006a5.668,5.668,0,0,0,5.667,5.667h14.168v28.335h59.5V249.712a56.673,56.673,0,0,0-3.777-20.343l-21.763-56.585A11.334,11.334,0,0,0,422.805,165.518Z" transform="translate(-135.903 -23.704)"/>
-    <path id="Path_66" data-name="Path 66" class="cls-3" d="M0,0H59.5V28.335H0Z" transform="translate(263.518 238.153)"/>
-    <g id="Group_85" data-name="Group 85" transform="translate(-229)">
-      <circle id="Ellipse_22" data-name="Ellipse 22" class="cls-5" cx="25.974" cy="25.974" r="25.974" transform="translate(22.195 243.348)"/>
-      <path id="Path_58" data-name="Path 58" class="cls-6" d="M57.651,377.923A31.169,31.169,0,1,1,88.82,346.754,31.2,31.2,0,0,1,57.651,377.923Zm0-51a19.835,19.835,0,1,0,19.835,19.835A19.855,19.855,0,0,0,57.651,326.92Z" transform="translate(-9.481 -77.433)"/>
-      <circle id="Ellipse_23" data-name="Ellipse 23" class="cls-3" cx="11.334" cy="11.334" r="11.334" transform="translate(36.836 257.988)"/>
-      <circle id="Ellipse_24" data-name="Ellipse 24" class="cls-5" cx="25.974" cy="25.974" r="25.974" transform="translate(84.533 243.348)"/>
-      <path id="Path_59" data-name="Path 59" class="cls-6" d="M154.755,377.923a31.169,31.169,0,1,1,31.169-31.169A31.2,31.2,0,0,1,154.755,377.923Zm0-51a19.835,19.835,0,1,0,19.835,19.835A19.855,19.855,0,0,0,154.755,326.92Z" transform="translate(-44.248 -77.433)"/>
-      <circle id="Ellipse_25" data-name="Ellipse 25" class="cls-3" cx="11.334" cy="11.334" r="11.334" transform="translate(99.173 257.988)"/>
-    </g>
-    <g id="Group_86" data-name="Group 86" transform="translate(-167)">
-      <circle id="Ellipse_24-2" data-name="Ellipse 24" class="cls-5" cx="25.974" cy="25.974" r="25.974" transform="translate(84.533 243.348)"/>
-      <path id="Path_59-2" data-name="Path 59" class="cls-6" d="M154.755,377.923a31.169,31.169,0,1,1,31.169-31.169A31.2,31.2,0,0,1,154.755,377.923Zm0-51a19.835,19.835,0,1,0,19.835,19.835A19.855,19.855,0,0,0,154.755,326.92Z" transform="translate(-44.248 -77.433)"/>
-      <circle id="Ellipse_25-2" data-name="Ellipse 25" class="cls-3" cx="11.334" cy="11.334" r="11.334" transform="translate(99.173 257.988)"/>
-    </g>
-    <circle id="Ellipse_26" data-name="Ellipse 26" class="cls-5" cx="25.974" cy="25.974" r="25.974" transform="translate(237.544 243.348)"/>
-    <path id="Path_60" data-name="Path 60" class="cls-6" d="M393.1,377.923a31.169,31.169,0,1,1,31.169-31.169A31.2,31.2,0,0,1,393.1,377.923Zm0-51a19.835,19.835,0,1,0,19.835,19.835A19.855,19.855,0,0,0,393.1,326.92Z" transform="translate(-129.582 -77.433)"/>
-    <circle id="Ellipse_27" data-name="Ellipse 27" class="cls-3" cx="11.334" cy="11.334" r="11.334" transform="translate(252.184 257.988)"/>
-    <path id="Path_61" data-name="Path 61" class="cls-2" d="M491.184,355.909h5.667a5.668,5.668,0,0,0,5.667-5.667V338.907a5.668,5.668,0,0,0-5.667-5.667h-5.667a5.668,5.668,0,0,0-5.667,5.667v11.334A5.667,5.667,0,0,0,491.184,355.909Z" transform="translate(-173.83 -83.754)"/>
-    <path id="Path_62" data-name="Path 62" class="cls-7" d="M491.184,297.931h5.667v17h-5.667a5.668,5.668,0,0,1-5.667-5.667V303.6A5.667,5.667,0,0,1,491.184,297.931Z" transform="translate(-173.83 -71.112)"/>
-    <path id="Path_63" data-name="Path 63" class="cls-2" d="M427.414,183.173H402.908a5.668,5.668,0,0,0-5.667,5.667v28.335a5.668,5.668,0,0,0,5.667,5.667h41.586a4.1,4.1,0,0,0,3.822-5.565l-10.322-26.84A11.336,11.336,0,0,0,427.414,183.173Z" transform="translate(-142.224 -30.025)"/>
-    <path id="Path_64" data-name="Path 64" class="cls-7" d="M349.942,174.345h11.334a5.668,5.668,0,0,1,5.667,5.667v79.338a5.668,5.668,0,0,1-5.667,5.667H349.942a5.668,5.668,0,0,1-5.667-5.667V180.012A5.668,5.668,0,0,1,349.942,174.345Z" transform="translate(-123.261 -26.864)"/>
-    <path id="Path_65" data-name="Path 65" class="cls-1" d="M244.011,333.241h39.669a5.668,5.668,0,0,1,5.667,5.667v17a5.668,5.668,0,0,1-5.667,5.667H244.011a5.668,5.668,0,0,1-5.667-5.667v-17A5.668,5.668,0,0,1,244.011,333.241Z" transform="translate(-85.334 -83.754)"/>
-    <circle id="Ellipse_28" data-name="Ellipse 28" class="cls-2" cx="5.667" cy="5.667" r="5.667" transform="translate(158.677 255.154)"/>
-  </g>
-</svg>
+                            <h4>Office inefficiency</h4>
+                            <p>Control the order:</p>
+                            <p>- photo report loading / unloading;</p>
+                            <p>- check the forwarder Liszt / systems;</p>
+                            <p>- notification system;</p>
+
+                            <h4>Communication</h4>
+                            <p>- a set of communication messages</p>
+                            <p>- the possibility of anonymous direct communication <br> between parties to the contract</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="row">
+                        <img src="img/svg/server.svg" alt="">
+                        <div>
+                            <h3>forwarder</h3>
+                            <h4>Search</h4>
+                            <p>Search engine is the best candidate from 30c to 2 minutes</p>
+
+                            <h4>Office inefficiency</h4>
+                            <p>Control the order:</p>
+                            <p>- photo report loading / unloading;</p>
+                            <p>- check the forwarder Liszt / systems;</p>
+                            <p>- notification system;</p>
+
+                            <h4>Communication</h4>
+                            <p>- a set of communication messages</p>
+                            <p>- the possibility of anonymous direct communication <br> between parties to the contract</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="row">
+                        <img src="img/svg/expeditor.svg" alt="">
+                        <div>
+                            <h3>forwarder</h3>
+                            <h4>Search</h4>
+                            <p>Search engine is the best candidate from 30c to 2 minutes</p>
+
+                            <h4>Office inefficiency</h4>
+                            <p>Control the order:</p>
+                            <p>- photo report loading / unloading;</p>
+                            <p>- check the forwarder Liszt / systems;</p>
+                            <p>- notification system;</p>
+
+                            <h4>Communication</h4>
+                            <p>- a set of communication messages</p>
+                            <p>- the possibility of anonymous direct communication <br> between parties to the contract</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="row">
+                        <img src="img/svg/cargo.svg" alt="">
+                        <div>
+                            <h3>forwarder</h3>
+                            <h4>Search</h4>
+                            <p>Search engine is the best candidate from 30c to 2 minutes</p>
+
+                            <h4>Office inefficiency</h4>
+                            <p>Control the order:</p>
+                            <p>- photo report loading / unloading;</p>
+                            <p>- check the forwarder Liszt / systems;</p>
+                            <p>- notification system;</p>
+
+                            <h4>Communication</h4>
+                            <p>- a set of communication messages</p>
+                            <p>- the possibility of anonymous direct communication <br> between parties to the contract</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <h2 class="wow fadeInDown" id="capacity" data-wow-dealy="1s" data-wow-offset="200">13,5 т</h2>
-
-        </div>
-    </section>
-
-    <section id="office">
-        <div class="wr">
-            <h3 class="problems">Lorem ipsum dolor sit.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta officiis, omnis culpa iure laboriosam maxime minus sequi numquam error optio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quas, unde. Voluptatum nobis eius, tempora laudantium nemo magni perspiciatis quasi! </p>
-            <div class="row wow fadeIn" data-wow-duration="1s" data-wow-offset="400">
-                <div id="linksBox">
-                    <svg id="links" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="10503 7175 413 240">
-                  <defs>
-                    <style>
-                      .cll-1 {
-                        fill: rgba(0,0,0,0);
-                        stroke: #dcdbde;
-                        stroke-width: 6px;
-
-                      }
-                      .cll-2 {
-                          fill: #8d8a94;
-                /*  animation-name: scaleme;*/
-                  animation-duration: 1s;
-                  animation-iteration-count: infinite;
-                  animation-timing-function: ease-in-out;
-                  animation-direction: alternate;
-                }
-
-
-
-                @keyframes scaleme {
-                  0% { transform: scale(1); }
-                  100% { transform: scale(1.1); }
-                }
-
-                /*
-                        .cll-2:hover{
-                            opacity: 0;
-                        }
-                */
-
-                      .cll-3 {
-                        filter: url(#Ellipse_15);
-                      }
-
-                      .cll-4 {
-                        filter: url(#Ellipse_14);
-                      }
-
-                      .cll-5 {
-                        filter: url(#Ellipse_12);
-                      }
-
-                      .cll-6 {
-                        filter: url(#Ellipse_17);
-                      }
-
-                      .cll-7 {
-                        filter: url(#Ellipse_13);
-                      }
-
-                      .cll-8 {
-                        filter: url(#Ellipse_16);
-                      }
-                    </style>
-                    <filter id="Ellipse_16" x="10860" y="7349" width="56" height="56" filterUnits="userSpaceOnUse">
-                      <feOffset dy="3" input="SourceAlpha"/>
-                      <feGaussianBlur stdDeviation="3" result="blur"/>
-                      <feFlood flood-opacity="0.161"/>
-                      <feComposite operator="in" in2="blur"/>
-                      <feComposite in="SourceGraphic"/>
-                    </filter>
-                    <filter id="Ellipse_13" x="10578" y="7213" width="56" height="56" filterUnits="userSpaceOnUse">
-                      <feOffset dy="3" input="SourceAlpha"/>
-                      <feGaussianBlur stdDeviation="3" result="blur-2"/>
-                      <feFlood flood-opacity="0.161"/>
-                      <feComposite operator="in" in2="blur-2"/>
-                      <feComposite in="SourceGraphic"/>
-                    </filter>
-                    <filter id="Ellipse_17" x="10719" y="7201" width="56" height="56" filterUnits="userSpaceOnUse">
-                      <feOffset dy="3" input="SourceAlpha"/>
-                      <feGaussianBlur stdDeviation="3" result="blur-3"/>
-                      <feFlood flood-opacity="0.161"/>
-                      <feComposite operator="in" in2="blur-3"/>
-                      <feComposite in="SourceGraphic"/>
-                    </filter>
-                    <filter id="Ellipse_12" x="10503" y="7311" width="56" height="56" filterUnits="userSpaceOnUse">
-                      <feOffset dy="3" input="SourceAlpha"/>
-                      <feGaussianBlur stdDeviation="3" result="blur-4"/>
-                      <feFlood flood-opacity="0.161"/>
-                      <feComposite operator="in" in2="blur-4"/>
-                      <feComposite in="SourceGraphic"/>
-                    </filter>
-                    <filter id="Ellipse_14" x="10693" y="7359" width="56" height="56" filterUnits="userSpaceOnUse">
-                      <feOffset dy="3" input="SourceAlpha"/>
-                      <feGaussianBlur stdDeviation="3" result="blur-5"/>
-                      <feFlood flood-opacity="0.161"/>
-                      <feComposite operator="in" in2="blur-5"/>
-                      <feComposite in="SourceGraphic"/>
-                    </filter>
-                    <filter id="Ellipse_15" x="10860" y="7175" width="56" height="56" filterUnits="userSpaceOnUse">
-                      <feOffset dy="3" input="SourceAlpha"/>
-                      <feGaussianBlur stdDeviation="3" result="blur-6"/>
-                      <feFlood flood-opacity="0.161"/>
-                      <feComposite operator="in" in2="blur-6"/>
-                      <feComposite in="SourceGraphic"/>
-                    </filter>
-                  </defs>
-                  <g id="Group_89" data-name="Group 89" transform="translate(10215 43)">
-                    <path id="Path_82" data-name="Path 82" class="cll-1" d="M0,98s41.95-9.6,60.7-34.1S75,0,75,0" transform="translate(316.5 7195.5)"/>
-                    <path id="Path_81" data-name="Path 81" class="cll-1" d="M0,0S72.25.8,101,37.3,115,146,115,146" transform="translate(391.5 7195.5)"/>
-                    <path id="Path_80" data-name="Path 80" class="cll-1" d="M0,158s37.3-28,43.8-67.5S26,0,26,0" transform="translate(506.5 7183.5)"/>
-                    <path id="Path_78" data-name="Path 78" class="cll-1" d="M0,26S33.75,3.4,69-3.1,141,0,141,0" transform="translate(532.5 7157.5)"/>
-                    <path id="Path_79" data-name="Path 79" class="cll-1" d="M0,0S59.05,18.3,94.3,55.3,141,148,141,148" transform="translate(532.5 7183.5)"/>
-                    <g class="cll-8" transform="matrix(1, 0, 0, 1, -10215, -43)">
-                      <circle id="Ellipse_16-2" data-name="Ellipse 16" class="cll-2" cx="19" cy="19" r="19" transform="translate(10869 7355)"/>
-                    </g>
-                    <path id="Path_83" data-name="Path 83" class="cll-1" d="M0,12S21.95-33.4,57.2-36.4,141,0,141,0" transform="translate(391.5 7183.5)"/>
-                    <g class="cll-7" transform="matrix(1, 0, 0, 1, -10215, -43)">
-                      <circle id="Ellipse_13-2" data-name="Ellipse 13" class="cll-2" cx="19" cy="19" r="19" transform="translate(10587 7219)"/>
-                    </g>
-                    <g class="cll-6" transform="matrix(1, 0, 0, 1, -10215, -43)">
-                      <circle id="Ellipse_17-2" data-name="Ellipse 17" class="cll-2" cx="19" cy="19" r="19" transform="translate(10728 7207)"/>
-                    </g>
-                    <path id="Path_85" data-name="Path 85" class="cll-1" d="M0,0S43.3-72.6,90.8-60.6,190,48,190,48" transform="translate(316.5 7293.5)"/>
-                    <path id="Path_84" data-name="Path 84" class="cll-1" d="M0,184s113.65-23.3,155.4-69.3S167,0,167,0" transform="translate(506.5 7157.5)"/>
-                    <g class="cll-5" transform="matrix(1, 0, 0, 1, -10215, -43)">
-                      <circle id="Ellipse_12-2" data-name="Ellipse 12" class="cll-2" cx="19" cy="19" r="19" transform="translate(10512 7317)"/>
-                    </g>
-                    <g class="cll-4" transform="matrix(1, 0, 0, 1, -10215, -43)">
-                      <circle id="Ellipse_14-2" data-name="Ellipse 14" class="cll-2" cx="19" cy="19" r="19" transform="translate(10702 7365)"/>
-                    </g>
-                    <g class="cll-3" transform="matrix(1, 0, 0, 1, -10215, -43)">
-                      <circle id="Ellipse_15-2" data-name="Ellipse 15" class="cll-2" cx="19" cy="19" r="19" transform="translate(10869 7181)"/>
-                    </g>
-                  </g>
-                </svg>
+            <div class="row">
+                <div class="box">
+                    <p>
+                        <p id="current"></p>
+                        <p id="all"></p>
+                    </p>
+                </div>
+                <div id="cover">
+                    <div class="progress-bar"></div>
                 </div>
 
-                <div id="cloudBox">
-                    <svg id="cloud" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="11171 7144 454 332">
-              <defs>
-                <style>
-                  .clc-1 {
-                    fill: rgba(0,0,0,0);
-                    stroke: #dcdbde;
-                    stroke-width: 6px;
-                  }
-
-                  .clc-2 {
-                    fill: #8d8a94;
-                  }
-
-
-                  .clc-4 {
-                    filter: url(#Path_36);
-                  }
-
-                  .clc-5 {
-                    filter: url(#Path_35);
-                  }
-
-                  .clc-6 {
-                    filter: url(#Path_34);
-                  }
-
-                  .clc-7 {
-            /*        filter: url(#Ellipse_16);*/
-                  }
-
-                  .clc-8 {
-                    filter: url(#Ellipse_20);
-                  }
-
-                  .clc-9 {
-                    filter: url(#Ellipse_21);
-                  }
-
-                  .clc-10 {
-                    filter: url(#Ellipse_19);
-                  }
-
-                  .clc-11 {
-            /*        filter: url(#Ellipse_18);*/
-                  }
-
-                  .clc-12 {
-            /*        filter: url(#Ellipse_15);*/
-                  }
-                </style>
-                <filter id="Ellipse_15" x="11490" y="7163" width="56" height="56" filterUnits="userSpaceOnUse">
-                  <feOffset dy="3" input="SourceAlpha"/>
-                  <feGaussianBlur stdDeviation="3" result="blur"/>
-                  <feFlood flood-opacity="0.161"/>
-                  <feComposite operator="in" in2="blur"/>
-                  <feComposite in="SourceGraphic"/>
-                </filter>
-                <filter id="Ellipse_18" x="11205" y="7144" width="56" height="56" filterUnits="userSpaceOnUse">
-                  <feOffset dy="3" input="SourceAlpha"/>
-                  <feGaussianBlur stdDeviation="3" result="blur-2"/>
-                  <feFlood flood-opacity="0.161"/>
-                  <feComposite operator="in" in2="blur-2"/>
-                  <feComposite in="SourceGraphic"/>
-                </filter>
-                <filter id="Ellipse_19" x="11370" y="7420" width="56" height="56" filterUnits="userSpaceOnUse">
-                  <feOffset dy="3" input="SourceAlpha"/>
-                  <feGaussianBlur stdDeviation="3" result="blur-3"/>
-                  <feFlood flood-opacity="0.161"/>
-                  <feComposite operator="in" in2="blur-3"/>
-                  <feComposite in="SourceGraphic"/>
-                </filter>
-                <filter id="Ellipse_21" x="11539" y="7377" width="56" height="56" filterUnits="userSpaceOnUse">
-                  <feOffset dy="3" input="SourceAlpha"/>
-                  <feGaussianBlur stdDeviation="3" result="blur-4"/>
-                  <feFlood flood-opacity="0.161"/>
-                  <feComposite operator="in" in2="blur-4"/>
-                  <feComposite in="SourceGraphic"/>
-                </filter>
-                <filter id="Ellipse_20" x="11569" y="7263" width="56" height="56" filterUnits="userSpaceOnUse">
-                  <feOffset dy="3" input="SourceAlpha"/>
-                  <feGaussianBlur stdDeviation="3" result="blur-5"/>
-                  <feFlood flood-opacity="0.161"/>
-                  <feComposite operator="in" in2="blur-5"/>
-                  <feComposite in="SourceGraphic"/>
-                </filter>
-                <filter id="Ellipse_16" x="11171" y="7350" width="56" height="56" filterUnits="userSpaceOnUse">
-                  <feOffset dy="3" input="SourceAlpha"/>
-                  <feGaussianBlur stdDeviation="3" result="blur-6"/>
-                  <feFlood flood-opacity="0.161"/>
-                  <feComposite operator="in" in2="blur-6"/>
-                  <feComposite in="SourceGraphic"/>
-                </filter>
-                <filter id="Path_34" x="11292.5" y="7261.113" width="141.399" height="98.688" filterUnits="userSpaceOnUse">
-                  <feOffset dy="3" input="SourceAlpha"/>
-                  <feGaussianBlur stdDeviation="5" result="blur-7"/>
-                  <feFlood flood-opacity="0.161"/>
-                  <feComposite operator="in" in2="blur-7"/>
-                  <feComposite in="SourceGraphic"/>
-                </filter>
-                <filter id="Path_35" x="11337.459" y="7228.643" width="132.407" height="131.158" filterUnits="userSpaceOnUse">
-                  <feOffset dy="3" input="SourceAlpha"/>
-                  <feGaussianBlur stdDeviation="5" result="blur-8"/>
-                  <feFlood flood-opacity="0.161"/>
-                  <feComposite operator="in" in2="blur-8"/>
-                  <feComposite in="SourceGraphic"/>
-                </filter>
-                <filter id="Path_36" x="11370.691" y="7246.127" width="157.248" height="113.701" filterUnits="userSpaceOnUse">
-                  <feOffset dy="3" input="SourceAlpha"/>
-                  <feGaussianBlur stdDeviation="5" result="blur-9"/>
-                  <feFlood flood-opacity="0.161"/>
-                  <feComposite operator="in" in2="blur-9"/>
-                  <feComposite in="SourceGraphic"/>
-                </filter>
-              </defs>
-              <g id="Group_88" data-name="Group 88" transform="translate(10133 43)">
-                <path id="Path_91" data-name="Path 91" class="clc-1" d="M-44.6-37.8S24.3-26.45,57.7-1.5,89,62,89,62" transform="translate(1143.5 7164.5)"/>
-                <path id="Path_86" data-name="Path 86" class="clc-1" d="M61,0S24.05,5.45,8.8,25.7,0,81,0,81" transform="translate(1324.5 7145.5)"/>
-                <path id="Path_87" data-name="Path 87" class="clc-1" d="M109,0S94.75,21.7,67.5,21.7,0,0,0,0" transform="translate(1355.5 7245.5)"/>
-                <path id="Path_88" data-name="Path 88" class="clc-1" d="M79,76S27.75,63.3,8,44.3,0,0,0,0" transform="translate(1355.5 7283.5)"/>
-                <path id="Path_89" data-name="Path 89" class="clc-1" d="M-17.1,113.3s-28-19-24.8-57.6S0,0,0,0" transform="translate(1281.5 7283.5)"/>
-                <path id="Path_90" data-name="Path 90" class="clc-1" d="M0,61S38.05,86.25,78.3,71,161,0,161,0" transform="translate(1069.5 7271.5)"/>
-                <g id="Group_87" data-name="Group 87">
-                  <g class="clc-12" transform="matrix(1, 0, 0, 1, -10133, -43)">
-                    <circle id="Ellipse_15-2" data-name="Ellipse 15" class="clc-2" cx="19" cy="19" r="19" transform="translate(11499 7169)"/>
-                  </g>
-                  <g class="clc-11" transform="matrix(1, 0, 0, 1, -10133, -43)">
-                    <circle id="Ellipse_18-2" data-name="Ellipse 18" class="clc-2" cx="19" cy="19" r="19" transform="translate(11214 7150)"/>
-                  </g>
-                  <g class="clc-10" transform="matrix(1, 0, 0, 1, -10133, -43)">
-                    <circle id="Ellipse_19-2" data-name="Ellipse 19" class="clc-2" cx="19" cy="19" r="19" transform="translate(11379 7426)"/>
-                  </g>
-                  <g class="clc-9" transform="matrix(1, 0, 0, 1, -10133, -43)">
-                    <circle id="Ellipse_21-2" data-name="Ellipse 21" class="clc-2" cx="19" cy="19" r="19" transform="translate(11548 7383)"/>
-                  </g>
-                  <g class="clc-8" transform="matrix(1, 0, 0, 1, -10133, -43)">
-                    <circle id="Ellipse_20-2" data-name="Ellipse 20" class="clc-2" cx="19" cy="19" r="19" transform="translate(11578 7269)"/>
-                  </g>
-                  <g class="clc-7" transform="matrix(1, 0, 0, 1, -10133, -43)">
-                    <circle id="Ellipse_16-2" data-name="Ellipse 16" class="clc-2" cx="19" cy="19" r="19" transform="translate(11180 7356)"/>
-                  </g>
-                </g>
-                <g id="Symbol_1_1" data-name="Symbol 1 – 1" transform="translate(-167 7)">
-                  <g class="clc-6" transform="matrix(1, 0, 0, 1, -9966, -50)">
-                    <path id="Path_34-2" data-name="Path 34" class="clc-3" d="M45.147.5C69.8.5,89.794,15.876,89.794,34.844c0,14.927,22.1,34.344,22.1,34.344H45.147C20.489,69.188.5,53.811.5,34.844S20.489.5,45.147.5Z" transform="translate(11307 7272.61)"/>
-                  </g>
-                  <g class="clc-5" transform="matrix(1, 0, 0, 1, -9966, -50)">
-                    <path id="Path_35-2" data-name="Path 35" class="clc-3" d="M51.7.5c28.279,0,51.2,23.729,51.2,53s-22.925,48.158-51.2,48.158S.5,82.771.5,53.5,23.425.5,51.7.5Z" transform="translate(11351.96 7240.14)"/>
-                  </g>
-                  <g class="clc-4" transform="matrix(1, 0, 0, 1, -9966, -50)">
-                    <path id="Path_36-2" data-name="Path 36" class="clc-3" d="M53.222.5C83.4.5,107.86,22.726,107.86,50.143c-.939,9.43-11.439,29.93-33.839,32.33s-74.9,1.6-74.9,1.6h0s-26.3-13.6-16.2-37.6C-8.979,27.773,23.046.5,53.222.5Z" transform="translate(11405.08 7257.63)"/>
-                  </g>
-                </g>
-              </g>
-            </svg>
-
+                <div class="box" id="buttons">
+                    <div class="button-previous"></div>
+                    <div class="button-next"></div>
                 </div>
-
             </div>
-        </div>
     </section>
 
-    <section id="calendar">
+    <section id="solutions">
         <div class="wr">
-            <h3 class="problems">Lorem ipsum dolor sit.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta officiis, omnis culpa iure laboriosam maxime minus sequi numquam error optio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quas, unde. Voluptatum nobis eius, tempora laudantium nemo magni perspiciatis quasi! </p>
-            <div id="calendarBox" class="wow flipInX" data-wow-offset="400" data-wow-duration="1s">
-                <svg id="calendarIco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="10888 7931 352 340">
-  <defs>
-    <style>
-      .cln-1 {
-        fill: #fff;
-      }
-
-      .cln-2 {
-        fill: #dcdbde;
-      }
-
-      .cln-3 {
-        font-size: 12px;
-        font-family: SegoeUI, Segoe UI;
-      }
-
-      .cln-4 {
-        opacity: 0.8;
-      }
-
-      .cln-5 {
-        opacity: 0.87;
-      }
-
-      .cln-6, .cln-8 {
-        fill: none;
-      }
-        
-      .cln-7 {
-        stroke: none;
-      }
-
-      .cln-9 {
-        filter: url(#Rectangle_151);
-      }
-
-      .cln-10 {
-        filter: url(#Rectangle_156);
-      }
-    </style>
-    <filter id="Rectangle_156" x="10888" y="7931" width="352" height="340" filterUnits="userSpaceOnUse">
-      <feOffset dy="3" input="SourceAlpha"/>
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feFlood flood-opacity="0.161"/>
-      <feComposite operator="in" in2="blur"/>
-      <feComposite in="SourceGraphic"/>
-    </filter>
-    <filter id="Rectangle_151" x="10891" y="7934" width="346" height="70" filterUnits="userSpaceOnUse">
-      <feOffset dy="3" input="SourceAlpha"/>
-      <feGaussianBlur stdDeviation="3" result="blur-2"/>
-      <feFlood flood-opacity="0.161"/>
-      <feComposite operator="in" in2="blur-2"/>
-      <feComposite in="SourceGraphic"/>
-    </filter>
-  </defs>
-  <g id="Group_97" data-name="Group 97" transform="translate(-1317 32)">
-    <g class="cln-10" transform="matrix(1, 0, 0, 1, 1317, -32)">
-      <rect id="Rectangle_156-2" data-name="Rectangle 156" class="cln-1" width="328" height="316" rx="10" transform="translate(10900 7940)"/>
-    </g>
-    <g class="cln-9" transform="matrix(1, 0, 0, 1, 1317, -32)">
-      <rect id="Rectangle_151-2" data-name="Rectangle 151" class="cln-2" width="328" height="52" rx="10" transform="translate(10900 7940)"/>
-    </g>
-    <g id="Group_51" data-name="Group 51" transform="translate(12160 7709.286)">
-      <g id="Group_44" data-name="Group 44">
-        <text id="M" class="cln-3" transform="translate(127.697 229.714)"><tspan x="0" y="0">M</tspan></text>
-      </g>
-      <g id="Group_45" data-name="Group 45">
-        <text id="S" class="cln-3" transform="translate(83.929 229.714)"><tspan x="0" y="0">S</tspan></text>
-      </g>
-      <g id="Group_46" data-name="Group 46">
-        <text id="W" class="cln-3" transform="translate(215.671 229.714)"><tspan x="0" y="0">W</tspan></text>
-      </g>
-      <g id="Group_47" data-name="Group 47">
-        <text id="T" class="cln-3" transform="translate(261.308 229.714)"><tspan x="0" y="0">T</tspan></text>
-      </g>
-      <g id="Group_48" data-name="Group 48">
-        <text id="F" class="cln-3" transform="translate(305.653 229.714)"><tspan x="0" y="0">F</tspan></text>
-      </g>
-      <g id="Group_49" data-name="Group 49">
-        <text id="S-2" data-name="S" class="cln-3" transform="translate(349.329 229.714)"><tspan x="0" y="0">S</tspan></text>
-      </g>
-      <g id="Group_50" data-name="Group 50">
-        <text id="T-2" data-name="T" class="cln-3" transform="translate(173.51 229.714)"><tspan x="0" y="0">T</tspan></text>
-      </g>
-    </g>
-    <g id="Group_53" data-name="Group 53" class="cln-4" transform="translate(12160 7724)">
-      <g id="Group_52" data-name="Group 52">
-        <text id="_30" data-name="30" class="cln-3" transform="translate(82.062 470.089)"><tspan x="0" y="0">30</tspan></text>
-      </g>
-    </g>
-    <g id="Group_62" data-name="Group 62" class="cln-5" transform="translate(12160 7724)">
-      <g id="Group_55" data-name="Group 55">
-        <text id="_16" data-name="16" class="cln-3" transform="translate(82.063 389.589)"><tspan x="0" y="0">16</tspan></text>
-      </g>
-      <g id="Group_56" data-name="Group 56">
-        <text id="_17" data-name="17" class="cln-3" transform="translate(126.062 389.589)"><tspan x="0" y="0">17</tspan></text>
-      </g>
-      <g id="Group_57" data-name="Group 57">
-        <text id="_19" data-name="19" class="cln-3" transform="translate(214.062 389.589)"><tspan x="0" y="0">19</tspan></text>
-      </g>
-      <g id="Group_58" data-name="Group 58">
-        <text id="_20" data-name="20" class="cln-3" transform="translate(258.062 389.589)"><tspan x="0" y="0">20</tspan></text>
-      </g>
-      <g id="Group_59" data-name="Group 59">
-        <text id="_21" data-name="21" class="cln-3" transform="translate(302.06 389.589)"><tspan x="0" y="0">21</tspan></text>
-      </g>
-      <g id="Group_60" data-name="Group 60">
-        <text id="_22" data-name="22" class="cln-3" transform="translate(346.062 389.589)"><tspan x="0" y="0">22</tspan></text>
-      </g>
-      <g id="Group_61" data-name="Group 61">
-        <text id="_18" data-name="18" class="cln-3" transform="translate(170.062 389.589)"><tspan x="0" y="0">18</tspan></text>
-      </g>
-    </g>
-    <g id="Group_70" data-name="Group 70" class="cln-5" transform="translate(12160 7724)">
-      <g id="Group_63" data-name="Group 63">
-        <text id="_23" data-name="23" class="cln-3" transform="translate(82.062 430.089)"><tspan x="0" y="0">23</tspan></text>
-      </g>
-      <g id="Group_64" data-name="Group 64">
-        <text id="_24" data-name="24" class="cln-3" transform="translate(126.062 430.089)"><tspan x="0" y="0">24</tspan></text>
-      </g>
-      <g id="Group_65" data-name="Group 65">
-        <text id="_26" data-name="26" class="cln-3" transform="translate(214.062 430.089)"><tspan x="0" y="0">26</tspan></text>
-      </g>
-      <g id="Group_66" data-name="Group 66">
-        <text id="_27" data-name="27" class="cln-3" transform="translate(258.062 430.089)"><tspan x="0" y="0">27</tspan></text>
-      </g>
-      <g id="Group_67" data-name="Group 67">
-        <text id="_28" data-name="28" class="cln-3" transform="translate(302.061 430.089)"><tspan x="0" y="0">28</tspan></text>
-      </g>
-      <g id="Group_68" data-name="Group 68">
-        <text id="_29" data-name="29" class="cln-3" transform="translate(346.062 430.089)"><tspan x="0" y="0">29</tspan></text>
-      </g>
-      <g id="Group_69" data-name="Group 69">
-        <text id="_25" data-name="25" class="cln-3" transform="translate(170.062 430.089)"><tspan x="0" y="0">25</tspan></text>
-      </g>
-    </g>
-    <g id="Group_85" data-name="Group 85" class="cln-5" transform="translate(12161 7724)">
-      <g id="Group_79" data-name="Group 79">
-        <text id="_2" data-name="2" class="cln-3" transform="translate(85.581 308.589)"><tspan x="0" y="0">2</tspan></text>
-      </g>
-      <g id="Group_80" data-name="Group 80">
-        <text id="_3" data-name="3" class="cln-3" transform="translate(129.581 308.589)"><tspan x="0" y="0">3</tspan></text>
-      </g>
-      <g id="Group_81" data-name="Group 81">
-        <text id="_5" data-name="5" class="cln-3" transform="translate(217.581 308.589)"><tspan x="0" y="0">5</tspan></text>
-      </g>
-      <g id="Group_82" data-name="Group 82" transform="translate(-2)">
-        <text id="_6" data-name="6" class="cln-3" transform="translate(261.581 308.589)"><tspan x="0" y="0">6</tspan></text>
-      </g>
-      <g id="Group_95" data-name="Group 95" transform="translate(44)">
-        <text id="_7" data-name="7" class="cln-3" transform="translate(261.581 308.589)"><tspan x="0" y="0">7</tspan></text>
-      </g>
-      <g id="Group_83" data-name="Group 83" transform="translate(-1)">
-        <text id="_8" data-name="8" class="cln-3" transform="translate(349.581 308.589)"><tspan x="0" y="0">8</tspan></text>
-      </g>
-      <g id="Group_84" data-name="Group 84">
-        <text id="_4" data-name="4" class="cln-3" transform="translate(173.581 308.589)"><tspan x="0" y="0">4</tspan></text>
-      </g>
-    </g>
-    <g id="Group_78" data-name="Group 78" class="cln-5" transform="translate(12160 7724)">
-      <g id="Group_72" data-name="Group 72">
-        <text id="_9" data-name="9" class="cln-3" transform="translate(85.581 349.627)"><tspan x="0" y="0">9</tspan></text>
-      </g>
-      <g id="Group_73" data-name="Group 73">
-        <text id="_10" data-name="10" class="cln-3" transform="translate(126.062 349.627)"><tspan x="0" y="0">10</tspan></text>
-      </g>
-      <g id="Group_74" data-name="Group 74">
-        <text id="_12" data-name="12" class="cln-3" transform="translate(214.062 349.627)"><tspan x="0" y="0">12</tspan></text>
-      </g>
-      <g id="Group_96" data-name="Group 96" transform="translate(44)">
-        <text id="_13" data-name="13" class="cln-3" transform="translate(214.062 349.627)"><tspan x="0" y="0">13</tspan></text>
-      </g>
-      <g id="Group_75" data-name="Group 75">
-        <text id="_14" data-name="14" class="cln-3" transform="translate(302.06 349.627)"><tspan x="0" y="0">14</tspan></text>
-      </g>
-      <g id="Group_76" data-name="Group 76">
-        <text id="_15" data-name="15" class="cln-3" transform="translate(346.062 349.627)"><tspan x="0" y="0">15</tspan></text>
-      </g>
-      <g id="Group_77" data-name="Group 77" transform="translate(1)">
-        <text id="_11" data-name="11" class="cln-3" transform="translate(170.062 349.627)"><tspan x="0" y="0">11</tspan></text>
-      </g>
-    </g>
-    <g id="Group_54" data-name="Group 54" class="cln-5" transform="translate(12160 7724)">
-      <text id="_1" data-name="1" class="cln-3" transform="translate(349.581 269.464)"><tspan x="0" y="0">1</tspan></text>
-    </g>
-    <g id="Ellipse_29" data-name="Ellipse 29" class="cln-6" transform="translate(12501 7978)">
-      <circle class="cln-7" cx="11.5" cy="11.5" r="11.5"/>
-      <circle class="cln-8" cx="11.5" cy="11.5" r="11"/>
-    </g>
-    <g id="Ellipse_30" data-name="Ellipse 30" class="cln-6" transform="translate(12501 8016)">
-      <circle class="cln-7" cx="11.5" cy="11.5" r="11.5"/>
-      <circle class="cln-8" cx="11.5" cy="11.5" r="11"/>
-    </g>
-    <g id="Ellipse_34" data-name="Ellipse 34" class="cln-6" transform="translate(12413 8016)">
-      <circle class="cln-7" cx="11.5" cy="11.5" r="11.5"/>
-      <circle class="cln-8" cx="11.5" cy="11.5" r="11"/>
-    </g>
-    <g id="Ellipse_32" data-name="Ellipse 32" class="cln-6" transform="translate(12458 8016)">
-      <circle class="cln-7" cx="11.5" cy="11.5" r="11.5"/>
-      <circle class="cln-8" cx="11.5" cy="11.5" r="11"/>
-    </g>
-    <g id="Ellipse_35" data-name="Ellipse 35" class="cln-6" transform="translate(12370 8016)">
-      <circle class="cln-7" cx="11.5" cy="11.5" r="11.5"/>
-      <circle class="cln-8" cx="11.5" cy="11.5" r="11"/>
-    </g>
-    <g id="Ellipse_38" data-name="Ellipse 38" class="cln-6" transform="translate(12327 8016)">
-      <circle class="cln-7" cx="11.5" cy="11.5" r="11.5"/>
-      <circle class="cln-8" cx="11.5" cy="11.5" r="11"/>
-    </g>
-    <g id="Ellipse_40" data-name="Ellipse 40" class="cln-6" transform="translate(12282 8016)">
-      <circle class="cln-7" cx="11.5" cy="11.5" r="11.5"/>
-      <circle class="cln-8" cx="11.5" cy="11.5" r="11"/>
-    </g>
-    <g id="Ellipse_42" data-name="Ellipse 42" class="cln-6" transform="translate(12237 8016)">
-      <circle class="cln-7" cx="11.5" cy="11.5" r="11.5"/>
-      <circle class="cln-8" cx="11.5" cy="11.5" r="11"/>
-    </g>
-    <g id="Ellipse_31" data-name="Ellipse 31" class="cln-6" transform="translate(12501 8058)">
-      <circle class="cln-7" cx="11.5" cy="11.5" r="11.5"/>
-      <circle class="cln-8" cx="11.5" cy="11.5" r="11"/>
-    </g>
-    <g id="Ellipse_37" data-name="Ellipse 37" class="cln-6" transform="translate(12413 8058)">
-      <circle class="cln-7" cx="11.5" cy="11.5" r="11.5"/>
-      <circle class="cln-8" cx="11.5" cy="11.5" r="11"/>
-    </g>
-    <g id="Ellipse_33" data-name="Ellipse 33" class="cln-6" transform="translate(12458 8058)">
-      <circle class="cln-7" cx="11.5" cy="11.5" r="11.5"/>
-      <circle class="cln-8" cx="11.5" cy="11.5" r="11"/>
-    </g>
-    <g id="Ellipse_36" data-name="Ellipse 36" class="cln-6" transform="translate(12370 8058)">
-      <circle class="cln-7" cx="11.5" cy="11.5" r="11.5"/>
-      <circle class="cln-8" cx="11.5" cy="11.5" r="11"/>
-    </g>
-    <g id="Ellipse_39" data-name="Ellipse 39" class="cln-6" transform="translate(12327 8058)">
-      <circle class="cln-7" cx="11.5" cy="11.5" r="11.5"/>
-      <circle class="cln-8" cx="11.5" cy="11.5" r="11"/>
-    </g>
-    <g id="Ellipse_41" data-name="Ellipse 41" class="cln-6" transform="translate(12282 8058)">
-      <circle class="cln-7" cx="11.5" cy="11.5" r="11.5"/>
-      <circle class="cln-8" cx="11.5" cy="11.5" r="11"/>
-    </g>
-    <g id="Ellipse_43" data-name="Ellipse 43" class="cln-6" transform="translate(12237 8058)">
-      <circle class="cln-7" cx="11.5" cy="11.5" r="11.5"/>
-      <circle class="cln-8" cx="11.5" cy="11.5" r="11"/>
-    </g>
-  </g>
-</svg>
-
+            <div class="row row1">
+                <h2>Solutions</h2>
             </div>
+            <div class="row row2">
 
+                <div class="track">
+
+                    <div class="progressBar2">
+
+                        <div id="cover2">
+                            <div class="progress-bar" id="progressBar2"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="text">
+                        <ul>
+                            <li class="solutions" order="1">Solution1</li>
+                            <li class="solutions" order="2">Solution2</li>
+                            <li class="solutions" order="3">Solution3</li>
+                        </ul>
+                    </div>
+
+                    <div id="anchors"></div>
+
+                    <div class="buttons"></div>
+                </div>
+                <div id="area">
+                    <div class="box" id="child">
+                        <div class="row" id="solution1"><img src="img/svg/expeditor.svg" alt="">
+                            <div>
+                                <h3>forwarder</h3>
+                                <h4>Search</h4>
+                                <p>Search engine is the best candidate from 30c to 2 minutes</p>
+
+                                <h4>Office inefficiency</h4>
+                                <p>Control the order:</p>
+                                <p>- photo report loading / unloading;</p>
+                                <p>- check the forwarder Liszt / systems;</p>
+                                <p>- notification system;</p>
+
+                                <h4>Communication</h4>
+                                <p>- a set of communication messages</p>
+                                <p>- the possibility of anonymous direct communication <br> between parties to the contract</p>
+                            </div>
+                        </div>
+                        <div class="row" id="solution2">
+                            <img src="img/svg/expeditor.svg" alt="">
+                            <div>
+                                <h3>forwarder</h3>
+                                <h4>Search</h4>
+                                <p>Search engine is the best candidate from 30c to 2 minutes</p>
+
+                                <h4>Office inefficiency</h4>
+                                <p>Control the order:</p>
+                                <p>- photo report loading / unloading;</p>
+                                <p>- check the forwarder Liszt / systems;</p>
+                                <p>- notification system;</p>
+
+                                <h4>Communication</h4>
+                                <p>- a set of communication messages</p>
+                                <p>- the possibility of anonymous direct communication <br> between parties to the contract</p>
+                            </div>
+                        </div>
+                        <div class="row" id="solution3">
+                            <img src="img/svg/expeditor.svg" alt="">
+                            <div>
+                                <h3>forwarder</h3>
+                                <h4>Search</h4>
+                                <p>Search engine is the best candidate from 30c to 2 minutes</p>
+
+                                <h4>Office inefficiency</h4>
+                                <p>Control the order:</p>
+                                <p>- photo report loading / unloading;</p>
+                                <p>- check the forwarder Liszt / systems;</p>
+                                <p>- notification system;</p>
+
+                                <h4>Communication</h4>
+                                <p>- a set of communication messages</p>
+                                <p>- the possibility of anonymous direct communication <br> between parties to the contract</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="contacts">
+        <div id="map"></div>
         <div class="wr">
-            <div class="rowtext">
-                <h2>CONTACT</h2>
-                <div class="desc">Lorem ipsum dolor sit amet, consectetur.</div>
-            </div>
             <div class="btn" data-remodal-target="form">send message</div>
+            <div class="row">
+                <ul>
+                    <li>
+
+                        <img src="img/svg/logo.svg" alt="">
+                        <p>
+                            ©E-Freight
+                        </p>
+
+                    </li>
+                    <li>
+
+                        <p> Address </p>
+                        <p>
+                            31-128, Poland KRAKÓW, <br> ul. KARMELICKA, nr. 64, lok. 9,
+                        </p>
+
+                    </li>
+                    <li>
+
+                        <p> Phone</p>
+                        <p>+48123615797</p>
+                        <p>+48123615797</p>
+
+                    </li>
+                    <li>
+
+                        <p> Email </p>
+                        <p>info@e-freight.eu</p>
+
+                    </li>
+                </ul>
+            </div>
 
             <div class="remodal" data-remodal-id="form" id="remodal-form">
                 <button data-remodal-action="close" class="remodal-close"></button>
-                <h2>Form</h2>
+
+                <h2>Message</h2>
                 <form id="form">
 
                     <!-- Hidden Required Fields -->
@@ -918,25 +438,6 @@
 
         </div>
     </section>
-    <section id="footer">
-
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156389.09519675156!2d20.92111296805183!3d52.232855044058034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc669a869f01%3A0x72f0be2a88ead3fc!2z0JLQsNGA0YjQsNCy0LAsINCf0L7Qu9GM0YnQsA!5e0!3m2!1suk!2sua!4v1501790216833" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-        <div class="row">
-            <div class="item">
-                <div class="img" style="background: url(img/ico/phone.svg) no-repeat; "></div>
-                <p> +492 32 388 289</p>
-            </div>
-            <div class="item">
-                <div class="img" style="background: url(img/ico/mail.svg) no-repeat; "></div>
-                <p><a href="">reinvent@gmail.com</a></p>
-            </div>
-            <div class="item">
-                <div class="img" style="background: url(img/ico/location.svg) no-repeat; "></div>
-                <p>Poland, Warszawa, str. Zlota</p>
-            </div>
-        </div>
-    </section>
-
 
     <div class="cd-overlay-nav">
         <span></span>
@@ -946,21 +447,13 @@
         <span></span>
     </div>
     <a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
-
     <script src="js/libs.min.js"></script>
     <script src="js/common.js"></script>
-    <script>
-        new WOW().init();
+    <!--Map-->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9uwFmCMmBdnB3M7rZQyMo76qQ3GzgKVo&callback=initMap">
 
-        var s = skrollr.init();
-        if (s.isMobile() == true) {
-
-            console.log("is mobile");
-            s.destroy();
-        }
 
     </script>
-
 </body>
 
 </html>
